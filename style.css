@@ -1,0 +1,287 @@
+body {
+    font-family: 'Raleway', sans-serif !important;
+    /* font-family: 'open sans', sans-serif; */
+    /* overflow: hidden; */
+    /* background-color: #f2f2f2; */
+}
+
+@media(max-width:36rem) {
+    html {
+        font-size: 35%;
+    }
+
+}
+
+@media(max-width:48rem) {
+    html {
+        font-size: 45%;
+    }
+
+}
+
+@media(max-width:62rem) {
+    html {
+        font-size: 55%;
+    }
+
+}
+.bg-lg-tertiary{
+    background-color: #f2f2f2;
+}
+
+.font-weight {
+    font-weight: 800;
+}
+
+.mt-top {
+    margin-top: 5%;
+}
+
+.UC {
+    text-transform: uppercase !important;
+}
+
+.btn-primary {
+    background-color: #2C4A9A !important;
+}
+
+.fs-60 {
+    font-size: 4rem;
+    font-weight: 800 !important;
+
+}
+
+.collapse a {
+    font-size: 12px !important;
+    /* color: black !important; */
+}
+
+.nav-btn a {
+    width: 110px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 10px 28px; More balanced vertical & horizontal space */
+
+}
+
+.hero-section a {
+    font-size: medium;
+}
+
+.stats-container {
+    background-color: #f2f2f2;
+    /* margin-top:5%; */
+    padding: 1%;
+}
+
+.btn:hover {
+    background-color: transparent !important;
+    color: inherit !important;
+    /* Or specify a color like black or #333 */
+    box-shadow: none !important;
+    /* Optional: remove shadow if Bootstrap adds one */
+}
+
+.custom-btn {
+    display: inline-block;
+    padding: .8rem .8rem !important;
+    min-width: 14rem;
+    text-align: center;
+    font-weight: bold !important;
+    font-size: 1rem;
+    border-radius: 1px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.1s;
+    border: none;
+    transition: all 0.3s ease;
+
+
+}
+
+/* 
+.custom-btn:hover {
+    background-color: #0056b3;
+    color: white;
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} */
+
+/* .ass-btn {
+    background-color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: none;
+    transition: box-shadow 0.3s ease;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+} */
+/* .custom-btn {
+            display: block;
+            /* width: 100%; */
+/* text-align: left;
+            padding: 12px 20px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            font-weight: normal;
+            font-size: 16px;
+            transition: all 0.2s ease;
+        }  */
+
+.ass-btn {
+    border: 1px solid #dee2e6;
+    background-color: white;
+    color: #212529;
+}
+
+.btn-outline-warning {
+    color: #ffc107 !important;
+    border-color: #ffc107 !important;
+    background-color: transparent;
+}
+
+.btn-outline-dark {
+    color: #343a40;
+    border-color: #dee2e6;
+    background-color: transparent;
+}
+
+.custom-btn:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.description-card {
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    padding: 30px;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.hire-btn {
+    background-color: #ffc107;
+    color: #000;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.hire-btn:hover {
+    background-color: #e0a800;
+}
+
+.service-container {
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.service-btn {
+    display: block;
+    /* width: 100%; */
+    text-align: left;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    background-color: white;
+    font-weight: normal;
+    font-size: 16px;
+    color: #212529;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.service-btn:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service-btn.active {
+    border: 1px solid #ffc107;
+    color: #ffc107;
+    font-weight: 500;
+}
+
+.info-card {
+    background-color: white;
+    width: 30rem;
+    padding: 1.8rem;
+    height: 100%;
+    margin-left: 3rem;
+    box-shadow: 0 5px 20px rgba(126, 126, 126, 0.255);
+}
+
+.icon-circle {
+    background-color: #f8f9fa;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.hire-btn {
+    background-color: #ffc107;
+    color: #000;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.hire-btn:hover {
+    background-color: #e0a800;
+}
+
+.more-text {
+    color: #ffc107;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.service-content {
+    display: none;
+    /* max-width: 1rem; */
+}
+
+.service-content.active {
+    display: block;
+}
+
+.carousel-item {
+    padding: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-indicators {
+    bottom: -10px;
+}
+
+.green-square-bullet li {
+    list-style-type: square;
+    padding-top: .5rem;
+}
+
+.green-square-bullet li::marker {
+    color: green;
+    
+}
