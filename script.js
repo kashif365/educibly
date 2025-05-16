@@ -1,4 +1,9 @@
 
+$(document).ready(function(){
+    $("#navbar").load("navbar.html");
+    $("#footer").load("footer.html");
+});
+
 document.querySelectorAll('.ass-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
         e.preventDefault();
@@ -39,7 +44,7 @@ document.querySelectorAll('.service-btn').forEach(btn => {
     });
 });
 $(document).ready(function () {
-    $(".owl-carousel").not('.owl-carousel-2, .testimonial-carousel').owlCarousel({
+    $(".owl-carousel").not('.owl-carousel-2, .testimonial-carousel, .service-carousel').owlCarousel({
         loop: true,
         margin: 20,
         nav: true,
@@ -116,6 +121,33 @@ $(document).ready(function () {
         }
     });
 });
+$(document).ready(function () {
+    $(".service-carousel").owlCarousel({
+        loop: true,
+        margin: 20,
+        nav:true,
+        dots: false,
+        navText: [
+            '<img src="./arrow-sm-left-svgrepo-com.svg" alt="Prev">',
+            '<img src="./arrow-sm-right-svgrepo-com.svg" alt="Next">'
+        ],
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            992: {
+                items: 3
+            },
+            1200: {
+                items:3
+            }
+        }
+    });
+});
+
 
 
 $(document).ready(function () {
@@ -207,5 +239,57 @@ document.addEventListener('DOMContentLoaded', function() {
                     additionalContent.style.display = 'none';
                     toggleButton.innerHTML = 'Show more <i class="fas fa-chevron-down"></i>';
                 }
+            });
+        });
+
+
+        function handleCarousel() {
+            if (window.innerWidth < 992) {
+                // Only initialize if not already initialized
+                if (!$('.experts-carousel').hasClass('owl-loaded')) {
+                    $('.experts-carousel').removeClass('d-none').addClass('d-block');
+                    $('.experts-container .d-lg-block').addClass('d-none');
+                    
+                    // Initialize Owl Carousel
+                    $('.experts-carousel').owlCarousel({
+                        loop: true,
+                        margin: 10,
+                        nav: true,
+                        dots: true,
+                        autoplay: true,
+                        autoplayTimeout: 5000,
+                        autoplayHoverPause: true,
+                        responsive: {
+                            0: {
+                                items: 1
+                            },
+                            576: {
+                                items: 2
+                            },
+                            768: {
+                                items: 3
+                            }
+                        }
+                    });
+                }
+            } else {
+                // Destroy carousel if it's initialized
+                if ($('.experts-carousel').hasClass('owl-loaded')) {
+                    $('.experts-carousel').owlCarousel('destroy');
+                }
+                
+                // Show regular layout, hide carousel
+                $('.experts-carousel').addClass('d-none').removeClass('d-block');
+                $('.experts-container .d-lg-block').removeClass('d-none');
+            }
+        }
+
+        // Run on page load
+        $(document).ready(function() {
+            handleCarousel();
+            
+            // Run on window resize
+            $(window).resize(function() {
+                handleCarousel();
             });
         });

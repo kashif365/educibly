@@ -26,37 +26,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-white shadow" id="navbar">
-        <div class="container py-3">
-            <a class="navbar-brand" href="#"><img src="./logo-header.svg" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse bg-white " id="navbarSupportedContent">
-                <ul
-                    class="navbar-nav d-flex justify-content-center mx-auto mb-2 mb-lg-0 gap-4 text-uppercase fw-semibold">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#">Our Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#">Guarantees</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#">Blog</a>
-                    </li>
-                </ul>
-                <div class="nav-btn d-flex align-items-center justify-content-center gap-2">
-                    <a href="#" class="btn btn-outline-dark fw-semibold">LOG IN</a>
-                    <a href="#" class="btn btn-outline-dark btn-warning fw-semibold ">GET STARTED</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <div id="navbar"></div>
 
     <header>
         <div class="container hero-section">
@@ -374,187 +344,146 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- .........................carousel........................... -->
-
-                <div class="col-lg-6 d-lg-none">
-                    <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <!-- Carousel indicators -->
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Essay"></button>
-                            <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="1"
-                                aria-label="Book Review"></button>
-                            <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="2"
-                                aria-label="Assignment"></button>
-                            <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="3"
-                                aria-label="Term Paper"></button>
-                            <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="4"
-                                aria-label="Lab Report"></button>
-                            <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="5"
-                                aria-label="Editing"></button>
-                            <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="6"
-                                aria-label="Presentations"></button>
-                        </div>
-
-                        <!-- Carousel slides -->
-                        <div class="carousel-inner">
-                            <!-- Essay Content -->
-                            <div class="carousel-item active">
-                                <div class="info-card">
-                                    <div id="essay-content" class="service-content">
-                                        <div class="d-flex align-items-center mb-4">
-                                            <div class="icon-circle">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    fill="currentColor" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z" />
-                                                    <path
-                                                        d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
-                                                </svg>
-                                            </div>
-                                            <h2 class="mb-0">Essay</h2>
-                                        </div>
-                                        <p>Whether you are struggling with an expository or persuasive essay, our
-                                            professional writers can help you understand how to write an essay in the
-                                            right way.</p>
-                                        <button class="hire-btn">HIRE AN EXPERT</button>
+                <div class="owl-carousel service-carousel d-lg-none">
+                    <!-- <div class=" d-lg-none"> -->
+                        <div class="info-card">
+                            <div id="essay-content" class="service-content-owl">
+                                <div class="d-flex align-items-center mb-4">
+                                    <div class="icon-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            fill="currentColor" viewBox="0 0 16 16">
+                                            <path
+                                                d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z" />
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
+                                        </svg>
                                     </div>
+                                    <h2 class="mb-0">Essay</h2>
                                 </div>
-                            </div>
-
-                            <!-- Book Review Content -->
-                            <div class="carousel-item">
-                                <div class="info-card">
-                                    <div id="book-review-content" class="service-content">
-                                        <div class="d-flex align-items-center mb-4">
-                                            <div class="icon-circle">
-                                                <img width="48" height="48" class="acf-module-services__card_img"
-                                                    src="https://educibly.com/wp-content/themes/educibly2021/images/acf-module/acf-module-services/card-book.svg">
-                                            </div>
-                                            <h2 class="mb-0">Book Review</h2>
-                                        </div>
-                                        <p>Have no time to read that book? Entrust this task to our essay service! We
-                                            have avid bookworms to help you craft a captivating book review according to
-                                            your instructor's requirements.</p>
-                                        <button class="hire-btn">HIRE AN EXPERT</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Assignment Content -->
-                            <div class="carousel-item">
-                                <div class="info-card">
-                                    <div id="assignment-content" class="service-content">
-                                        <div class="d-flex align-items-center mb-4">
-                                            <div class="icon-circle">
-                                                <img width="48" height="48" class="acf-module-services__card_img"
-                                                    src="https://educibly.com/wp-content/themes/educibly2021/images/acf-module/acf-module-services/card-assignment.svg">
-                                            </div>
-                                            <h2 class="mb-0">Assignment</h2>
-                                        </div>
-                                        <p>Let our experts handle your assignments with precision and expertise. Our
-                                            writers deliver high-quality, customized work that meets your specific
-                                            requirements and deadlines.</p>
-                                        <button class="hire-btn">HIRE AN EXPERT</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Term Paper Content -->
-                            <div class="carousel-item">
-                                <div class="info-card">
-                                    <div id="term-paper-content" class="service-content">
-                                        <div class="d-flex align-items-center mb-4">
-                                            <div class="icon-circle">
-                                                <img width="48" height="48" class="acf-module-services__card_img"
-                                                    src="https://educibly.com/wp-content/themes/educibly2021/images/acf-module/acf-module-services/card-term.svg">
-                                            </div>
-                                            <h2 class="mb-0">Term Paper</h2>
-                                        </div>
-                                        <p>Struggling with your term paper? Our experienced academic writers can help
-                                            you research, outline, and craft a compelling term paper that earns top
-                                            grades.</p>
-                                        <button class="hire-btn">HIRE AN EXPERT</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Lab Report Content -->
-                            <div class="carousel-item">
-                                <div class="info-card">
-                                    <div id="lab-report-content" class="service-content">
-                                        <div class="d-flex align-items-center mb-4">
-                                            <div class="icon-circle">
-                                                <img width="48" height="48" class="acf-module-services__card_img"
-                                                    src="https://educibly.com/wp-content/themes/educibly2021/images/acf-module/acf-module-services/card-lab.svg">
-                                            </div>
-                                            <h2 class="mb-0">Lab Report</h2>
-                                        </div>
-                                        <p>Our science experts can help with all aspects of your lab report, from data
-                                            analysis to discussion sections. We ensure accuracy, clarity, and adherence
-                                            to scientific writing standards.</p>
-                                        <button class="hire-btn">HIRE AN EXPERT</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Editing Content -->
-                            <div class="carousel-item">
-                                <div class="info-card">
-                                    <div id="editing-content" class="service-content">
-                                        <div class="d-flex align-items-center mb-4">
-                                            <div class="icon-circle">
-                                                <img width="48" height="48" class="acf-module-services__card_img"
-                                                    src="https://educibly.com/wp-content/themes/educibly2021/images/acf-module/acf-module-services/card-editing.svg">
-                                            </div>
-                                            <h2 class="mb-0">Editing</h2>
-                                        </div>
-                                        <p>Our professional editors can polish your paper to perfection. We improve
-                                            grammar, style, clarity, and formatting while preserving your unique voice
-                                            and ideas.</p>
-                                        <button class="hire-btn">HIRE AN EXPERT</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Presentations Content -->
-                            <div class="carousel-item">
-                                <div class="info-card">
-                                    <div id="presentations-content" class="service-content">
-                                        <div class="d-flex align-items-center mb-4">
-                                            <div class="icon-circle">
-                                                <img width="48" height="48" class="acf-module-services__card_img"
-                                                    src="https://educibly.com/wp-content/themes/educibly2021/images/acf-module/acf-module-services/card-presentation.svg">
-                                            </div>
-                                            <h2 class="mb-0">Presentations</h2>
-                                        </div>
-                                        <p>Need an engaging, professional presentation? Our experts can create
-                                            compelling slides with clear visuals and concise content to help you deliver
-                                            your message effectively.</p>
-                                        <button class="hire-btn">HIRE AN EXPERT</button>
-                                    </div>
-                                </div>
+                                <p>Whether you are struggling with an expository or persuasive essay, our
+                                    professional writers can help you understand how to write an essay in the
+                                    right way.</p>
+                                <button class="hire-btn">HIRE AN EXPERT</button>
                             </div>
                         </div>
 
-                        <!-- Carousel controls -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                        <div class="info-card">
+                            <div id="book-review-content" class="service-content-owl">
+                                <div class="d-flex align-items-center mb-4">
+                                    <div class="icon-circle">
+                                        <img width="48" height="48" class="acf-module-services__card_img"
+                                            src="https://educibly.com/wp-content/themes/educibly2021/images/acf-module/acf-module-services/card-book.svg">
+                                    </div>
+                                    <h2 class="mb-0">Book Review</h2>
+                                </div>
+                                <p>Have no time to read that book? Entrust this task to our essay service! We
+                                    have avid bookworms to help you craft a captivating book review according to
+                                    your instructor's requirements.</p>
+                                <button class="hire-btn">HIRE AN EXPERT</button>
+                            </div>
+                        </div>
+
+
+                        <!-- Assignment Content -->
+
+                        <div class="info-card">
+                            <div id="assignment-content" class="service-content-owl">
+                                <div class="d-flex align-items-center mb-4">
+                                    <div class="icon-circle">
+                                        <img width="48" height="48" class="acf-module-services__card_img"
+                                            src="https://educibly.com/wp-content/themes/educibly2021/images/acf-module/acf-module-services/card-assignment.svg">
+                                    </div>
+                                    <h2 class="mb-0">Assignment</h2>
+                                </div>
+                                <p>Let our experts handle your assignments with precision and expertise. Our
+                                    writers deliver high-quality, customized work that meets your specific
+                                    requirements and deadlines.</p>
+                                <button class="hire-btn">HIRE AN EXPERT</button>
+                            </div>
+                        </div>
+
+
+                        <!-- Term Paper Content -->
+
+                        <div class="info-card">
+                            <div id="term-paper-content" class="service-content-owl">
+                                <div class="d-flex align-items-center mb-4">
+                                    <div class="icon-circle">
+                                        <img width="48" height="48" class="acf-module-services__card_img"
+                                            src="https://educibly.com/wp-content/themes/educibly2021/images/acf-module/acf-module-services/card-term.svg">
+                                    </div>
+                                    <h2 class="mb-0">Term Paper</h2>
+                                </div>
+                                <p>Struggling with your term paper? Our experienced academic writers can help
+                                    you research, outline, and craft a compelling term paper that earns top
+                                    grades.</p>
+                                <button class="hire-btn">HIRE AN EXPERT</button>
+                            </div>
+                        </div>
+
+
+                        <!-- Lab Report Content -->
+
+                        <div class="info-card">
+                            <div id="lab-report-content" class="service-content-owl">
+                                <div class="d-flex align-items-center mb-4">
+                                    <div class="icon-circle">
+                                        <img width="48" height="48" class="acf-module-services__card_img"
+                                            src="https://educibly.com/wp-content/themes/educibly2021/images/acf-module/acf-module-services/card-lab.svg">
+                                    </div>
+                                    <h2 class="mb-0">Lab Report</h2>
+                                </div>
+                                <p>Our science experts can help with all aspects of your lab report, from data
+                                    analysis to discussion sections. We ensure accuracy, clarity, and adherence
+                                    to scientific writing standards.</p>
+                                <button class="hire-btn">HIRE AN EXPERT</button>
+                            </div>
+                        </div>
+
+
+                        <!-- Editing Content -->
+
+                        <div class="info-card">
+                            <div id="editing-content" class="service-content-owl">
+                                <div class="d-flex align-items-center mb-4">
+                                    <div class="icon-circle">
+                                        <img width="48" height="48" class="acf-module-services__card_img"
+                                            src="https://educibly.com/wp-content/themes/educibly2021/images/acf-module/acf-module-services/card-editing.svg">
+                                    </div>
+                                    <h2 class="mb-0">Editing</h2>
+                                </div>
+                                <p>Our professional editors can polish your paper to perfection. We improve
+                                    grammar, style, clarity, and formatting while preserving your unique voice
+                                    and ideas.</p>
+                                <button class="hire-btn">HIRE AN EXPERT</button>
+                            </div>
+                        </div>
+
+
+                        <!-- Presentations Content -->
+
+                        <div class="info-card">
+                            <div id="presentations-content" class="service-content-owl">
+                                <div class="d-flex align-items-center mb-4">
+                                    <div class="icon-circle">
+                                        <img width="48" height="48" class="acf-module-services__card_img"
+                                            src="https://educibly.com/wp-content/themes/educibly2021/images/acf-module/acf-module-services/card-presentation.svg">
+                                    </div>
+                                    <h2 class="mb-0">Presentations</h2>
+                                </div>
+                                <p>Need an engaging, professional presentation? Our experts can create
+                                    compelling slides with clear visuals and concise content to help you deliver
+                                    your message effectively.</p>
+                                <button class="hire-btn">HIRE AN EXPERT</button>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
+
 
     <div class="container-fluid bg-lg-tertiary">
         <div class="container">
@@ -958,148 +887,311 @@
 
             </div>
             <div class="col-lg-6">
-                <div class="d-flex">
-                    <div class="text-center">
-                        <img width="180" height="180"
-                            src="https://educibly.com/wp-content/themes/educibly2021/images/section-experts/experts-icon-1.png"
-                            class="rounded-circle mb-2" alt="#262999">
+                <div class="experts-container">
+                    <div class="experts-carousel owl-carousel owl-theme d-none d-block-below-lg">
+                        <!-- Each expert as a single carousel item when below 992px -->
+                        <div class="expert-card text-center">
+                            <img width="180" height="180"
+                                src="https://educibly.com/wp-content/themes/educibly2021/images/section-experts/experts-icon-1.png"
+                                class="rounded-circle mb-2" alt="#262999">
 
-                        <div class="d-flex justify-content-center align-items-center gap-2 mb-1">
-                            <span class="bg-success text-white px-3 py-1 rounded-pill small fw-semibold">Editor</span>
-                            <span
-                                class="bg-warning text-dark px-2 py-1 rounded-pill small fw-semibold d-flex align-items-center gap-1">
-                                4.5
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
-                                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M3.612 15.443c-.396.198-.824-.149-.746-.592l.83-4.73-3.523-3.356c-.33-.314-.16-.888.282-.95l4.898-.696 2.062-4.374c.197-.419.73-.419.927 0l2.062 4.374 4.898.696c.441.062.612.636.282.95l-3.523 3.356.83 4.73c.078.443-.35.79-.746.592L8 13.187l-4.389 2.256z" />
-                                </svg>
-                            </span>
+                            <div class="d-flex justify-content-center align-items-center gap-2 mb-1">
+                                <span
+                                    class="bg-success text-white px-3 py-1 rounded-pill small fw-semibold">Editor</span>
+                                <span
+                                    class="bg-warning text-dark px-2 py-1 rounded-pill small fw-semibold d-flex align-items-center gap-1">
+                                    4.5
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.396.198-.824-.149-.746-.592l.83-4.73-3.523-3.356c-.33-.314-.16-.888.282-.95l4.898-.696 2.062-4.374c.197-.419.73-.419.927 0l2.062 4.374 4.898.696c.441.062.612.636.282.95l-3.523 3.356.83 4.73c.078.443-.35.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                </span>
+                            </div>
+
+                            <h5 class="fw-bold mb-1">#262999</h5>
+                            <p class="mb-0 small text-muted">Business, Philosophy & History Completed orders:
+                                <strong>1,936</strong>
+                            </p>
                         </div>
 
-                        <h5 class="fw-bold mb-1">#262999</h5>
-                        <p class="mb-0 small text-muted">Business, Philosophy & History Completed orders:
-                            <strong>1,936</strong>
-                        </p>
+                        <div class="expert-card text-center">
+                            <img width="180" height="180"
+                                src="https://educibly.com/wp-content/themes/educibly2021/images/section-experts/experts-icon-2.png"
+                                class="rounded-circle mb-2" alt="#275314">
+
+                            <div class="d-flex justify-content-center align-items-center gap-2 mb-1">
+                                <span
+                                    class="bg-primary text-white px-3 py-1 rounded-pill small fw-semibold">Writer</span>
+                                <span
+                                    class="bg-warning text-dark px-2 py-1 rounded-pill small fw-semibold d-flex align-items-center gap-1">
+                                    4.7
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.396.198-.824-.149-.746-.592l.83-4.73-3.523-3.356c-.33-.314-.16-.888.282-.95l4.898-.696 2.062-4.374c.197-.419.73-.419.927 0l2.062 4.374 4.898.696c.441.062.612.636.282.95l-3.523 3.356.83 4.73c.078.443-.35.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                </span>
+                            </div>
+
+                            <h5 class="fw-bold mb-1">#275314</h5>
+                            <p class="mb-0 small text-muted">Literature, Nursing & Ecology Completed orders:
+                                <strong>1,567</strong>
+                            </p>
+                        </div>
+
+                        <div class="expert-card text-center">
+                            <img width="180" height="180"
+                                src="https://educibly.com/wp-content/themes/educibly2021/images/section-experts/experts-icon-3.png"
+                                class="rounded-circle mb-2" alt="#262999">
+
+                            <div class="d-flex justify-content-center align-items-center gap-2 mb-1">
+                                <span
+                                    class="bg-warning text-white px-3 py-1 rounded-pill small fw-semibold">Researcher</span>
+                                <span
+                                    class="bg-warning text-dark px-2 py-1 rounded-pill small fw-semibold d-flex align-items-center gap-1">
+                                    4.8
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.396.198-.824-.149-.746-.592l.83-4.73-3.523-3.356c-.33-.314-.16-.888.282-.95l4.898-.696 2.062-4.374c.197-.419.73-.419.927 0l2.062 4.374 4.898.696c.441.062.612.636.282.95l-3.523 3.356.83 4.73c.078.443-.35.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                </span>
+                            </div>
+
+                            <h5 class="fw-bold mb-1">#262999</h5>
+                            <p class="mb-0 small text-muted">Business, Philosophy & History Completed orders:
+                                <strong>1,936</strong>
+                            </p>
+                        </div>
+
+                        <div class="expert-card text-center">
+                            <img width="180" height="180"
+                                src="https://educibly.com/wp-content/themes/educibly2021/images/section-experts/experts-icon-1.png"
+                                class="rounded-circle mb-2" alt="#262999">
+
+                            <div class="d-flex justify-content-center align-items-center gap-2 mb-1">
+                                <span
+                                    class="bg-success text-white px-3 py-1 rounded-pill small fw-semibold">Editor</span>
+                                <span
+                                    class="bg-warning text-dark px-2 py-1 rounded-pill small fw-semibold d-flex align-items-center gap-1">
+                                    4.5
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.396.198-.824-.149-.746-.592l.83-4.73-3.523-3.356c-.33-.314-.16-.888.282-.95l4.898-.696 2.062-4.374c.197-.419.73-.419.927 0l2.062 4.374 4.898.696c.441.062.612.636.282.95l-3.523 3.356.83 4.73c.078.443-.35.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                </span>
+                            </div>
+
+                            <h5 class="fw-bold mb-1">#262999</h5>
+                            <p class="mb-0 small text-muted">Business, Philosophy & History Completed orders:
+                                <strong>1,936</strong>
+                            </p>
+                        </div>
+
+                        <div class="expert-card text-center">
+                            <img width="180" height="180"
+                                src="https://educibly.com/wp-content/themes/educibly2021/images/section-experts/experts-icon-2.png"
+                                class="rounded-circle mb-2" alt="#275314">
+
+                            <div class="d-flex justify-content-center align-items-center gap-2 mb-1">
+                                <span
+                                    class="bg-primary text-white px-3 py-1 rounded-pill small fw-semibold">Writer</span>
+                                <span
+                                    class="bg-warning text-dark px-2 py-1 rounded-pill small fw-semibold d-flex align-items-center gap-1">
+                                    4.7
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.396.198-.824-.149-.746-.592l.83-4.73-3.523-3.356c-.33-.314-.16-.888.282-.95l4.898-.696 2.062-4.374c.197-.419.73-.419.927 0l2.062 4.374 4.898.696c.441.062.612.636.282.95l-3.523 3.356.83 4.73c.078.443-.35.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                </span>
+                            </div>
+
+                            <h5 class="fw-bold mb-1">#275314</h5>
+                            <p class="mb-0 small text-muted">Literature, Nursing & Ecology Completed orders:
+                                <strong>1,567</strong>
+                            </p>
+                        </div>
+
+                        <div class="expert-card text-center">
+                            <img width="180" height="180"
+                                src="https://educibly.com/wp-content/themes/educibly2021/images/section-experts/experts-icon-3.png"
+                                class="rounded-circle mb-2" alt="#262999">
+
+                            <div class="d-flex justify-content-center align-items-center gap-2 mb-1">
+                                <span
+                                    class="bg-warning text-white px-3 py-1 rounded-pill small fw-semibold">Researcher</span>
+                                <span
+                                    class="bg-warning text-dark px-2 py-1 rounded-pill small fw-semibold d-flex align-items-center gap-1">
+                                    4.8
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.396.198-.824-.149-.746-.592l.83-4.73-3.523-3.356c-.33-.314-.16-.888.282-.95l4.898-.696 2.062-4.374c.197-.419.73-.419.927 0l2.062 4.374 4.898.696c.441.062.612.636.282.95l-3.523 3.356.83 4.73c.078.443-.35.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                </span>
+                            </div>
+
+                            <h5 class="fw-bold mb-1">#262999</h5>
+                            <p class="mb-0 small text-muted">Business, Philosophy & History Completed orders:
+                                <strong>1,936</strong>
+                            </p>
+                        </div>
                     </div>
-                    <div class="text-center">
-                        <img width="180" height="180"
-                            src="https://educibly.com/wp-content/themes/educibly2021/images/section-experts/experts-icon-2.png"
-                            class="rounded-circle mb-2" alt="#262999">
 
-                        <div class="d-flex justify-content-center align-items-center gap-2 mb-1">
-                            <span class="bg-primary text-white px-3 py-1 rounded-pill small fw-semibold">Writer</span>
-                            <span
-                                class="bg-warning text-dark px-2 py-1 rounded-pill small fw-semibold d-flex align-items-center gap-1">
-                                4.7
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
-                                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M3.612 15.443c-.396.198-.824-.149-.746-.592l.83-4.73-3.523-3.356c-.33-.314-.16-.888.282-.95l4.898-.696 2.062-4.374c.197-.419.73-.419.927 0l2.062 4.374 4.898.696c.441.062.612.636.282.95l-3.523 3.356.83 4.73c.078.443-.35.79-.746.592L8 13.187l-4.389 2.256z" />
-                                </svg>
-                            </span>
+                    <!-- For desktop view (greater than 992px), show as regular flex layout -->
+                    <div class="d-none d-lg-block">
+                        <div class="experts-item">
+                            <div class="text-center me-3">
+                                <img width="180" height="180"
+                                    src="https://educibly.com/wp-content/themes/educibly2021/images/section-experts/experts-icon-1.png"
+                                    class="rounded-circle mb-2" alt="#262999">
+
+                                <div class="d-flex justify-content-center align-items-center gap-2 mb-1">
+                                    <span
+                                        class="bg-success text-white px-3 py-1 rounded-pill small fw-semibold">Editor</span>
+                                    <span
+                                        class="bg-warning text-dark px-2 py-1 rounded-pill small fw-semibold d-flex align-items-center gap-1">
+                                        4.5
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.396.198-.824-.149-.746-.592l.83-4.73-3.523-3.356c-.33-.314-.16-.888.282-.95l4.898-.696 2.062-4.374c.197-.419.73-.419.927 0l2.062 4.374 4.898.696c.441.062.612.636.282.95l-3.523 3.356.83 4.73c.078.443-.35.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                    </span>
+                                </div>
+
+                                <h5 class="fw-bold mb-1">#262999</h5>
+                                <p class="mb-0 small text-muted">Business, Philosophy & History Completed orders:
+                                    <strong>1,936</strong>
+                                </p>
+                            </div>
+                            <div class="text-center me-3">
+                                <img width="180" height="180"
+                                    src="https://educibly.com/wp-content/themes/educibly2021/images/section-experts/experts-icon-2.png"
+                                    class="rounded-circle mb-2" alt="#275314">
+
+                                <div class="d-flex justify-content-center align-items-center gap-2 mb-1">
+                                    <span
+                                        class="bg-primary text-white px-3 py-1 rounded-pill small fw-semibold">Writer</span>
+                                    <span
+                                        class="bg-warning text-dark px-2 py-1 rounded-pill small fw-semibold d-flex align-items-center gap-1">
+                                        4.7
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.396.198-.824-.149-.746-.592l.83-4.73-3.523-3.356c-.33-.314-.16-.888.282-.95l4.898-.696 2.062-4.374c.197-.419.73-.419.927 0l2.062 4.374 4.898.696c.441.062.612.636.282.95l-3.523 3.356.83 4.73c.078.443-.35.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                    </span>
+                                </div>
+
+                                <h5 class="fw-bold mb-1">#275314</h5>
+                                <p class="mb-0 small text-muted">Literature, Nursing & Ecology Completed orders:
+                                    <strong>1,567</strong>
+                                </p>
+                            </div>
+                            <div class="text-center">
+                                <img width="180" height="180"
+                                    src="https://educibly.com/wp-content/themes/educibly2021/images/section-experts/experts-icon-3.png"
+                                    class="rounded-circle mb-2" alt="#262999">
+
+                                <div class="d-flex justify-content-center align-items-center gap-2 mb-1">
+                                    <span
+                                        class="bg-warning text-white px-3 py-1 rounded-pill small fw-semibold">Researcher</span>
+                                    <span
+                                        class="bg-warning text-dark px-2 py-1 rounded-pill small fw-semibold d-flex align-items-center gap-1">
+                                        4.8
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.396.198-.824-.149-.746-.592l.83-4.73-3.523-3.356c-.33-.314-.16-.888.282-.95l4.898-.696 2.062-4.374c.197-.419.73-.419.927 0l2.062 4.374 4.898.696c.441.062.612.636.282.95l-3.523 3.356.83 4.73c.078.443-.35.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                    </span>
+                                </div>
+
+                                <h5 class="fw-bold mb-1">#262999</h5>
+                                <p class="mb-0 small text-muted">Business, Philosophy & History Completed orders:
+                                    <strong>1,936</strong>
+                                </p>
+                            </div>
                         </div>
 
-                        <h5 class="fw-bold mb-1">#275314</h5>
-                        <p class="mb-0 small text-muted">Literature, Nursing & Ecology Completed orders:
-                            <strong>1,567</strong>
-                        </p>
-                    </div>
-                    <div class="text-center">
-                        <img width="180" height="180"
-                            src="https://educibly.com/wp-content/themes/educibly2021/images/section-experts/experts-icon-3.png"
-                            class="rounded-circle mb-2" alt="#262999">
+                        <div class="experts-item">
+                            <div class="text-center me-3">
+                                <img width="180" height="180"
+                                    src="https://educibly.com/wp-content/themes/educibly2021/images/section-experts/experts-icon-1.png"
+                                    class="rounded-circle mb-2" alt="#262999">
 
-                        <div class="d-flex justify-content-center align-items-center gap-2 mb-1">
-                            <span
-                                class="bg-warning text-white px-3 py-1 rounded-pill small fw-semibold">Researcher</span>
-                            <span
-                                class="bg-warning text-dark px-2 py-1 rounded-pill small fw-semibold d-flex align-items-center gap-1">
-                                4.8
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
-                                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M3.612 15.443c-.396.198-.824-.149-.746-.592l.83-4.73-3.523-3.356c-.33-.314-.16-.888.282-.95l4.898-.696 2.062-4.374c.197-.419.73-.419.927 0l2.062 4.374 4.898.696c.441.062.612.636.282.95l-3.523 3.356.83 4.73c.078.443-.35.79-.746.592L8 13.187l-4.389 2.256z" />
-                                </svg>
-                            </span>
+                                <div class="d-flex justify-content-center align-items-center gap-2 mb-1">
+                                    <span
+                                        class="bg-success text-white px-3 py-1 rounded-pill small fw-semibold">Editor</span>
+                                    <span
+                                        class="bg-warning text-dark px-2 py-1 rounded-pill small fw-semibold d-flex align-items-center gap-1">
+                                        4.5
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.396.198-.824-.149-.746-.592l.83-4.73-3.523-3.356c-.33-.314-.16-.888.282-.95l4.898-.696 2.062-4.374c.197-.419.73-.419.927 0l2.062 4.374 4.898.696c.441.062.612.636.282.95l-3.523 3.356.83 4.73c.078.443-.35.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                    </span>
+                                </div>
+
+                                <h5 class="fw-bold mb-1">#262999</h5>
+                                <p class="mb-0 small text-muted">Business, Philosophy & History Completed orders:
+                                    <strong>1,936</strong>
+                                </p>
+                            </div>
+                            <div class="text-center me-3">
+                                <img width="180" height="180"
+                                    src="https://educibly.com/wp-content/themes/educibly2021/images/section-experts/experts-icon-2.png"
+                                    class="rounded-circle mb-2" alt="#275314">
+
+                                <div class="d-flex justify-content-center align-items-center gap-2 mb-1">
+                                    <span
+                                        class="bg-primary text-white px-3 py-1 rounded-pill small fw-semibold">Writer</span>
+                                    <span
+                                        class="bg-warning text-dark px-2 py-1 rounded-pill small fw-semibold d-flex align-items-center gap-1">
+                                        4.7
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.396.198-.824-.149-.746-.592l.83-4.73-3.523-3.356c-.33-.314-.16-.888.282-.95l4.898-.696 2.062-4.374c.197-.419.73-.419.927 0l2.062 4.374 4.898.696c.441.062.612.636.282.95l-3.523 3.356.83 4.73c.078.443-.35.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                    </span>
+                                </div>
+
+                                <h5 class="fw-bold mb-1">#275314</h5>
+                                <p class="mb-0 small text-muted">Literature, Nursing & Ecology Completed orders:
+                                    <strong>1,567</strong>
+                                </p>
+                            </div>
+                            <div class="text-center">
+                                <img width="180" height="180"
+                                    src="https://educibly.com/wp-content/themes/educibly2021/images/section-experts/experts-icon-3.png"
+                                    class="rounded-circle mb-2" alt="#262999">
+
+                                <div class="d-flex justify-content-center align-items-center gap-2 mb-1">
+                                    <span
+                                        class="bg-warning text-white px-3 py-1 rounded-pill small fw-semibold">Researcher</span>
+                                    <span
+                                        class="bg-warning text-dark px-2 py-1 rounded-pill small fw-semibold d-flex align-items-center gap-1">
+                                        4.8
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.396.198-.824-.149-.746-.592l.83-4.73-3.523-3.356c-.33-.314-.16-.888.282-.95l4.898-.696 2.062-4.374c.197-.419.73-.419.927 0l2.062 4.374 4.898.696c.441.062.612.636.282.95l-3.523 3.356.83 4.73c.078.443-.35.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                    </span>
+                                </div>
+
+                                <h5 class="fw-bold mb-1">#262999</h5>
+                                <p class="mb-0 small text-muted">Business, Philosophy & History Completed orders:
+                                    <strong>1,936</strong>
+                                </p>
+                            </div>
                         </div>
-
-                        <h5 class="fw-bold mb-1">#262999</h5>
-                        <p class="mb-0 small text-muted">Business, Philosophy & History Completed orders:
-                            <strong>1,936</strong>
-                        </p>
-                    </div>
-                </div>
-                <div class="d-flex mt-4">
-                    <div class="text-center">
-                        <img width="180" height="180"
-                            src="https://educibly.com/wp-content/themes/educibly2021/images/section-experts/experts-icon-1.png"
-                            class="rounded-circle mb-2" alt="#262999">
-
-                        <div class="d-flex justify-content-center align-items-center gap-2 mb-1">
-                            <span class="bg-success text-white px-3 py-1 rounded-pill small fw-semibold">Editor</span>
-                            <span
-                                class="bg-warning text-dark px-2 py-1 rounded-pill small fw-semibold d-flex align-items-center gap-1">
-                                4.5
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
-                                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M3.612 15.443c-.396.198-.824-.149-.746-.592l.83-4.73-3.523-3.356c-.33-.314-.16-.888.282-.95l4.898-.696 2.062-4.374c.197-.419.73-.419.927 0l2.062 4.374 4.898.696c.441.062.612.636.282.95l-3.523 3.356.83 4.73c.078.443-.35.79-.746.592L8 13.187l-4.389 2.256z" />
-                                </svg>
-                            </span>
-                        </div>
-
-                        <h5 class="fw-bold mb-1">#262999</h5>
-                        <p class="mb-0 small text-muted">Business, Philosophy & History Completed orders:
-                            <strong>1,936</strong>
-                        </p>
-                    </div>
-                    <div class="text-center">
-                        <img width="180" height="180"
-                            src="https://educibly.com/wp-content/themes/educibly2021/images/section-experts/experts-icon-2.png"
-                            class="rounded-circle mb-2" alt="#262999">
-
-                        <div class="d-flex justify-content-center align-items-center gap-2 mb-1">
-                            <span class="bg-primary text-white px-3 py-1 rounded-pill small fw-semibold">Writer</span>
-                            <span
-                                class="bg-warning text-dark px-2 py-1 rounded-pill small fw-semibold d-flex align-items-center gap-1">
-                                4.7
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
-                                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M3.612 15.443c-.396.198-.824-.149-.746-.592l.83-4.73-3.523-3.356c-.33-.314-.16-.888.282-.95l4.898-.696 2.062-4.374c.197-.419.73-.419.927 0l2.062 4.374 4.898.696c.441.062.612.636.282.95l-3.523 3.356.83 4.73c.078.443-.35.79-.746.592L8 13.187l-4.389 2.256z" />
-                                </svg>
-                            </span>
-                        </div>
-
-                        <h5 class="fw-bold mb-1">#275314</h5>
-                        <p class="mb-0 small text-muted">Literature, Nursing & Ecology Completed orders:
-                            <strong>1,567</strong>
-                        </p>
-                    </div>
-                    <div class="text-center">
-                        <img width="180" height="180"
-                            src="https://educibly.com/wp-content/themes/educibly2021/images/section-experts/experts-icon-3.png"
-                            class="rounded-circle mb-2" alt="#262999">
-
-                        <div class="d-flex justify-content-center align-items-center gap-2 mb-1">
-                            <span
-                                class="bg-warning text-white px-3 py-1 rounded-pill small fw-semibold">Researcher</span>
-                            <span
-                                class="bg-warning text-dark px-2 py-1 rounded-pill small fw-semibold d-flex align-items-center gap-1">
-                                4.8
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
-                                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M3.612 15.443c-.396.198-.824-.149-.746-.592l.83-4.73-3.523-3.356c-.33-.314-.16-.888.282-.95l4.898-.696 2.062-4.374c.197-.419.73-.419.927 0l2.062 4.374 4.898.696c.441.062.612.636.282.95l-3.523 3.356.83 4.73c.078.443-.35.79-.746.592L8 13.187l-4.389 2.256z" />
-                                </svg>
-                            </span>
-                        </div>
-
-                        <h5 class="fw-bold mb-1">#262999</h5>
-                        <p class="mb-0 small text-muted">Business, Philosophy & History Completed orders:
-                            <strong>1,936</strong>
-                        </p>
                     </div>
                 </div>
             </div>
@@ -1566,8 +1658,7 @@
             </div>
         </div>
     </div>
-
-    <div class="container faq-container mt-top mb-4">
+ <div class="container faq-container mt-top mb-4">
         <div class="p-top heading-category text-center">
             <h1 class="fw-bold">F A Q</h1>
             <p class="fs-5 py-1 pb-4">Here you'll find answers to some of the most common questions.</p>
@@ -1575,7 +1666,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="accordion mt-top" id="accordionExample">
-                    <!-- Accordion Item 1 -->
+                    <!-- Accordion Item 1 --> 
                     <div class="accordion-item custom-accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button collapsed custom-accordion-button fs-5" type="button"
@@ -1798,7 +1889,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="container-fluid bg-lg-tertiary mt-top pb-4 p-top">
         <div class="container why-choose-conatiner">
             <div class="div-01 text-start">
@@ -1871,160 +1962,7 @@
         </div>
     </div>
 
-
-    <!-- <footer class="text-white p-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <ul>
-                        <li class="py-2">Case Study Writing Service</li>
-                        <li class="py-2">Case Study Writing Service</li>
-                        <li>Case Study Writing Service</li>
-                        <li>Case Study Writing Service</li>
-                        <li>Case Study Writing Service</li>
-                        <li>Case Study Writing Service</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer> -->
-     <footer class="footer">
-        <!-- Service Links Section -->
-        <div class="container">
-            <div class="row mb-3">
-                <div class="col-md-3 col-6">
-                    <a href="#">Case Study Writing Service</a>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="#">Military Essay</a>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="#">Academic Writing Service</a>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="#">Term Paper Writing Service</a>
-                </div>
-            </div>
-            
-            <div class="row mb-3">
-                <div class="col-md-3 col-6">
-                    <a href="#">Coursework Writing Service</a>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="#">Dissertation Writing Service</a>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="#">Do My Homework</a>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="#">Do My Assignment</a>
-                </div>
-            </div>
-            
-            <div class="row mb-3">
-                <div class="col-md-3 col-6">
-                    <a href="#">Buy Research Paper</a>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="#">Thesis Writing Service</a>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="#">Research Proposal</a>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="#">Buy Custom Essay</a>
-                </div>
-            </div>
-            
-            
-            <!-- Additional content that will be hidden by default -->
-            <div id="additionalContent" style="display: none;">
-                <div class="row mb-3">
-                    <div class="col-md-3 col-6">
-                        <a href="#">Literature Review</a>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <a href="#">Lab Report Writing</a>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <a href="#">Book Report</a>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <a href="#">Scholarship Essay</a>
-                    </div>
-                </div>
-                
-                <div class="row mb-3">
-                    <div class="col-md-3 col-6">
-                        <a href="#">Annotated Bibliography</a>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <a href="#">Personal Statement</a>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <a href="#">Admission Essay</a>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <a href="#">Speech Writing</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-12 text-center show-more" id="toggleButton">
-                    Show more <i class="fas fa-chevron-down"></i>
-                </div>
-            </div>
-            <hr class="divider">
-            
-            <!-- Footer Info Section -->
-            <div class="row">
-                <!-- Logo and Description Column -->
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <div class="logo">
-                        <h2 class="fw-bold text-white">educibly<span>.</span></h2>
-                    </div>
-                    <p class="mb-4">Safe and secure online platform that matches students in need of academic assistance with subject-matter experts</p>
-                    
-                    <p>We accept:</p>
-                    <div class="payment-icons">
-                        <img width="152" height="24" src="https://educibly.com/wp-content/themes/educibly2021/images/footer/payment-cards-up-row-color.svg" alt="payments">
-                        <img width="157" height="24" src="https://educibly.com/wp-content/themes/educibly2021/images/footer/payment-cards-bottom-row-color.svg" alt="payments">
-                    </div>
-                </div>
-                
-                <!-- Company Links Column -->
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <ul class="list-unstyled">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Our Team</a></li>
-                        <li><a href="#">Guarantees</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Disclaimer Column -->
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <h5 class="footer-title">HOW OUR SERVICE IS USED:</h5>
-                    <p class="disclaimer">
-                        Educibly.com service is used for research, consulting, and inspirational purposes only! 
-                        Papers received from educibly.com are NOT meant for submission! Never hand in papers 
-                        received from our company! Write your own papers and use educibly.com only as a 
-                        reference. Educibly.com is strongly against any form of cheating.
-                    </p>
-                </div>
-                
-                <!-- Contact Column -->
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="footer-title">PHONE & EMAIL</h5>
-                    <div class="contact-info">
-                        <p><img src="https://flagcdn.com/16x12/us.png" class="flag" alt="US"> +1 775 553 8687</p>
-                    </div>
-                    <p>support@educibly.com</p>
-                </div>
-            </div>
-        </div>
-     </footer>
+    <div id="footer"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
