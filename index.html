@@ -18,6 +18,8 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 
 
 </head>
@@ -1247,116 +1249,111 @@
                 </div>
 
                 <!-- Testimonial Platform Tabs -->
-                <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
+                <ul class="nav nav-pills mb-4 mb-bottom" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="pills-trustpilot-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-trustpilot" type="button" role="tab" aria-controls="pills-trustpilot"
-                            aria-selected="true">Trustpilot</button>
+                        <button class="nav-link active bg-transparent fw-bold text-black fs-5" id="pills-trustpilot-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-trustpilot" type="button" role="tab"
+                            aria-controls="pills-trustpilot" aria-selected="true">Trustpilot</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-facebook-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-facebook" type="button" role="tab" aria-controls="pills-facebook"
-                            aria-selected="false">Facebook</button>
+                        <button class="nav-link bg-transparent fw-bold text-black fs-5" id="pills-facebook-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-facebook" type="button" role="tab"
+                            aria-controls="pills-facebook" aria-selected="false">Facebook</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-sitejabber-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-sitejabber" type="button" role="tab" aria-controls="pills-sitejabber"
-                            aria-selected="false">Sitejabber</button>
+                        <button class="nav-link bg-transparent fw-bold text-black fs-5" id="pills-sitejabber-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-sitejabber" type="button" role="tab"
+                            aria-controls="pills-sitejabber" aria-selected="false">Sitejabber</button>
                     </li>
                 </ul>
 
                 <!-- Testimonial Content -->
-                <div class="tab-content" id="pills-tabContent">
+                <div class="tab-content mt-top mb-bottom" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-trustpilot" role="tabpanel"
                         aria-labelledby="pills-trustpilot-tab">
                         <div class="owl-carousel owl-theme testimonial-carousel">
                             <div class="item">
                                 <div class="testimonial-card bg-white border-0 shadow">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <img width="45" height="45" src="https://educibly.com/wp-content/themes/educibly2021/images/section-reviews__trustpilot/trustpilot-1.png" alt="trust-pilot-customer">
-                                        <div>
-                                            <h5 class="reviewer-name mb-0">Ning</h5>
-                                            <p class="website mb-0">reviewed www.educibly.com</p>
-                                        </div>
+                                    <div class="d-flex justify-content-start align-items-center mb-3">
+                                        <!-- Profile Image (circular and clear) -->
+                                        <img src="https://educibly.com/wp-content/themes/educibly2021/images/section-reviews__trustpilot/trustpilot-1.png"
+                                            alt="trust-pilot-customer"
+                                            style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+
+                                        <!-- Star Rating -->
+                                        <img src="https://cdn.worldvectorlogo.com/logos/stars-5-1.svg"
+                                            alt="5 star rating" style="height: 24px;" class="star">
                                     </div>
-                                    <div class="stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <p class="testimonial-text">The person who did my presentation is awesome. I will be
+
+                                    <p class="website mb-0 text-start py-3"><strong>Ning</strong> reviewed
+                                        www.educibly.com</p>
+                                    <p class="testimonial-text text-start">The person who did my presentation is
+                                        awesome. I will be
                                         returning to tip them as soon as my grade post. Thank you! He or she went over
                                         and beyond and I really do appreciate it</p>
                                 </div>
                             </div>
-
-                            <!-- Testimonial 2 -->
                             <div class="item">
                                 <div class="testimonial-card bg-white border-0 shadow">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <img src="/api/placeholder/80/80" alt="Carol P." class="profile-img me-3">
-                                        <div>
-                                            <h5 class="reviewer-name mb-0">Carol P.</h5>
-                                            <p class="website mb-0">reviewed www.educibly.com</p>
-                                        </div>
+                                    <div class="d-flex justify-content-start align-items-center mb-3">
+                                        <!-- Profile Image (circular and clear) -->
+                                        <img src="https://educibly.com/wp-content/themes/educibly2021/images/section-reviews__trustpilot/trustpilot-2.png"
+                                            alt="trust-pilot-customer"
+                                            style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+
+                                        <!-- Star Rating -->
+                                        <img src="https://cdn.worldvectorlogo.com/logos/stars-5-1.svg"
+                                            alt="5 star rating" style="height: 24px;" class="star">
                                     </div>
-                                    <div class="stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <p class="testimonial-text">My expert 91374 has done an excellent job with my
-                                        editing. The quality of the paper is so much better and hopefully meets the
-                                        Chair's approval 😊</p>
+
+                                    <p class="website mb-0 text-start py-3"><strong>Ning</strong> reviewed
+                                        www.educibly.com</p>
+                                    <p class="testimonial-text text-start">The person who did my presentation is
+                                        awesome. I will be
+                                        returning to tip them as soon as my grade post. Thank you! He or she went over
+                                        and beyond and I really do appreciate it</p>
                                 </div>
                             </div>
-
-                            <!-- Testimonial 3 -->
                             <div class="item">
                                 <div class="testimonial-card bg-white border-0 shadow">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <img src="/api/placeholder/80/80" alt="Boyd N." class="profile-img me-3">
-                                        <div>
-                                            <h5 class="reviewer-name mb-0">Boyd N.</h5>
-                                            <p class="website mb-0">reviewed www.educibly.com</p>
-                                        </div>
+                                    <div class="d-flex justify-content-start align-items-center mb-3">
+                                        <!-- Profile Image (circular and clear) -->
+                                        <img src="https://educibly.com/wp-content/themes/educibly2021/images/section-reviews__trustpilot/trustpilot-3.png"
+                                            alt="trust-pilot-customer"
+                                            style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+
+                                        <!-- Star Rating -->
+                                        <img src="https://cdn.worldvectorlogo.com/logos/stars-5-1.svg"
+                                            alt="5 star rating" style="height: 24px;" class="star">
                                     </div>
-                                    <div class="stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <p class="testimonial-text">I received a 96% on my case study. The paper met all the
-                                        requirements my instructor asked for. The expert followed every direction and
-                                        was very fast. A truly reliable essay writing service. Great job!</p>
+
+                                    <p class="website mb-0 text-start py-3"><strong>Ning</strong> reviewed
+                                        www.educibly.com</p>
+                                    <p class="testimonial-text text-start">The person who did my presentation is
+                                        awesome. I will be
+                                        returning to tip them as soon as my grade post. Thank you! He or she went over
+                                        and beyond and I really do appreciate it</p>
                                 </div>
                             </div>
-
-                            <!-- Additional testimonials can be added here -->
                             <div class="item">
                                 <div class="testimonial-card bg-white border-0 shadow">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <img src="/api/placeholder/80/80" alt="Sarah M." class="profile-img me-3">
-                                        <div>
-                                            <h5 class="reviewer-name mb-0">Sarah M.</h5>
-                                            <p class="website mb-0">reviewed www.educibly.com</p>
-                                        </div>
+                                    <div class="d-flex justify-content-start align-items-center mb-3">
+                                        <!-- Profile Image (circular and clear) -->
+                                        <img src="https://educibly.com/wp-content/themes/educibly2021/images/section-reviews__trustpilot/trustpilot-4.png"
+                                            alt="trust-pilot-customer"
+                                            style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+
+                                        <!-- Star Rating -->
+                                        <img src="https://cdn.worldvectorlogo.com/logos/stars-5-1.svg"
+                                            alt="5 star rating" style="height: 24px;" class="star">
                                     </div>
-                                    <div class="stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <p class="testimonial-text">Excellent service! My paper was delivered ahead of
-                                        schedule and exceeded all my expectations. Will definitely use again!</p>
+
+                                    <p class="website mb-0 text-start py-3"><strong>Ning</strong> reviewed
+                                        www.educibly.com</p>
+                                    <p class="testimonial-text text-start">The person who did my presentation is
+                                        awesome. I will be
+                                        returning to tip them as soon as my grade post. Thank you! He or she went over
+                                        and beyond and I really do appreciate it</p>
                                 </div>
                             </div>
                         </div>
@@ -1366,26 +1363,99 @@
                     <div class="tab-pane fade" id="pills-facebook" role="tabpanel" aria-labelledby="pills-facebook-tab">
                         <div class="owl-carousel owl-theme testimonial-carousel">
                             <!-- Facebook testimonials would go here -->
-                            <div class="item">
-                                <div class="testimonial-card bg-white border-0 shadow">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <img src="/api/placeholder/80/80" alt="Facebook User" class="profile-img me-3">
-                                        <div>
-                                            <h5 class="reviewer-name mb-0">John D.</h5>
-                                            <p class="website mb-0">reviewed on Facebook</p>
-                                        </div>
+                            <div class="card border-0 shadow-sm p-3 mb-3 bg-white rounded " style="max-width: 500px;">
+                                <div class="d-flex align-items-start mb-2">
+                                    <img src="https://educibly.com/wp-content/themes/educibly2021/images/section-reviews__fb/facebook-1.png"
+                                        alt="trust-pilot-customer"
+                                        style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover; margin-right: 10px;">
+                                    <div>
+                                        <p class="mb-1" style="font-size: 14px;">
+                                            <a href="#" class="text-primary text-decoration-none fw-semibold">Catrin
+                                                Saenz</a> reviewed our service -
+                                            <span class="bg-blue text-white px-2 py-1 small fw-semibold rounded "
+                                                style="font-size: 12px;">
+                                                5 ★
+                                            </span>
+                                        </p>
+                                        <p class="text-muted mb-0" style="font-size: 13px;">Australia, Melbourne</p>
                                     </div>
-                                    <div class="stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <p class="testimonial-text">Facebook review example - this would be replaced with
-                                        actual content.</p>
                                 </div>
+                                <p class="mb-0 text-dark" style="font-size: 14px; line-height: 1.6;">
+                                    I like the prices and that the experts take my concerns about the paper and adjust
+                                    to match the instructions. I like that the company keeps track of the experts and my
+                                    concerns. I will definitely use your service again.
+                                </p>
                             </div>
+                            <div class="card border-0 shadow-sm p-3 mb-3 bg-white rounded " style="max-width: 500px;">
+                                <div class="d-flex align-items-start mb-2">
+                                    <img src="https://educibly.com/wp-content/themes/educibly2021/images/section-reviews__fb/facebook-4.png"
+                                        alt="trust-pilot-customer"
+                                        style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover; margin-right: 10px;">
+                                    <div>
+                                        <p class="mb-1" style="font-size: 14px;">
+                                            <a href="#" class="text-primary text-decoration-none fw-semibold">Catrin
+                                                Saenz</a> reviewed our service -
+                                            <span class="bg-blue text-white px-2 py-1 small fw-semibold rounded "
+                                                style="font-size: 12px;">
+                                                5 ★
+                                            </span>
+                                        </p>
+                                        <p class="text-muted mb-0" style="font-size: 13px;">Australia, Melbourne</p>
+                                    </div>
+                                </div>
+                                <p class="mb-0 text-dark" style="font-size: 14px; line-height: 1.6;">
+                                    I like the prices and that the experts take my concerns about the paper and adjust
+                                    to match the instructions. I like that the company keeps track of the experts and my
+                                    concerns. I will definitely use your service again.
+                                </p>
+                            </div>
+                            <div class="card border-0 shadow-sm p-3 mb-3 bg-white rounded " style="max-width: 500px;">
+                                <div class="d-flex align-items-start mb-2">
+                                    <img src="https://educibly.com/wp-content/themes/educibly2021/images/section-reviews__fb/facebook-3.png"
+                                        alt="trust-pilot-customer"
+                                        style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover; margin-right: 10px;">
+                                    <div>
+                                        <p class="mb-1" style="font-size: 14px;">
+                                            <a href="#" class="text-primary text-decoration-none fw-semibold">Catrin
+                                                Saenz</a> reviewed our service -
+                                            <span class="bg-blue text-white px-2 py-1 small fw-semibold rounded "
+                                                style="font-size: 12px;">
+                                                5 ★
+                                            </span>
+                                        </p>
+                                        <p class="text-muted mb-0" style="font-size: 13px;">Australia, Melbourne</p>
+                                    </div>
+                                </div>
+                                <p class="mb-0 text-dark" style="font-size: 14px; line-height: 1.6;">
+                                    I like the prices and that the experts take my concerns about the paper and adjust
+                                    to match the instructions. I like that the company keeps track of the experts and my
+                                    concerns. I will definitely use your service again.
+                                </p>
+                            </div>
+                            <div class="card border-0 shadow-sm p-3 mb-3 bg-white rounded " style="max-width: 500px;">
+                                <div class="d-flex align-items-start mb-2">
+                                    <img src="https://educibly.com/wp-content/themes/educibly2021/images/section-reviews__fb/facebook-2.png"
+                                        alt="trust-pilot-customer"
+                                        style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover; margin-right: 10px;">
+                                    <div>
+                                        <p class="mb-1" style="font-size: 14px;">
+                                            <a href="#" class="text-primary text-decoration-none fw-semibold">Catrin
+                                                Saenz</a> reviewed our service -
+                                            <span class="bg-blue text-white px-2 py-1 small fw-semibold rounded "
+                                                style="font-size: 12px;">
+                                                5 ★
+                                            </span>
+                                        </p>
+                                        <p class="text-muted mb-0" style="font-size: 13px;">Australia, Melbourne</p>
+                                    </div>
+                                </div>
+                                <p class="mb-0 text-dark" style="font-size: 14px; line-height: 1.6;">
+                                    I like the prices and that the experts take my concerns about the paper and adjust
+                                    to match the instructions. I like that the company keeps track of the experts and my
+                                    concerns. I will definitely use your service again.
+                                </p>
+                            </div>
+
                         </div>
                     </div>
 
@@ -1394,26 +1464,334 @@
                         aria-labelledby="pills-sitejabber-tab">
                         <div class="owl-carousel owl-theme testimonial-carousel">
                             <!-- Sitejabber testimonials would go here -->
-                            <div class="item">
-                                <div class="testimonial-card bg-white border-0 shadow">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <img src="/api/placeholder/80/80" alt="Sitejabber User"
-                                            class="profile-img me-3">
-                                        <div>
-                                            <h5 class="reviewer-name mb-0">Emily R.</h5>
-                                            <p class="website mb-0">reviewed on Sitejabber</p>
+                            <div class="card border-0 shadow-sm p-3 mb-3 bg-white rounded" style="max-width: 500px;">
+                                <div class="d-flex align-items-center mb-2">
+                                    <img src="https://educibly.com/wp-content/themes/educibly2021/images/section-reviews__site-jabber/sitejabber-2.png"
+                                        alt="customer" class=" me-2" style="width: 60px; height: 60px; ">
+                                    <div>
+                                        <div class="d-flex align-items-center mb-1">
+                                            <img src="./download.svg" alt="" class="w-50">
                                         </div>
+                                        <p class="mb-0 small">
+                                            <a href="#" class="text-primary fw-semibold text-decoration-none">Armin
+                                                H.</a> reviewed educibly.com
+                                        </p>
                                     </div>
-                                    <div class="stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <p class="testimonial-text">Sitejabber review example - this would be replaced with
-                                        actual content.</p>
                                 </div>
+                                <p class="mb-0 text-dark small lh-base mt-2">
+                                    Thank you very much. The essay was well put together and much more than I was
+                                    expecting.
+                                    This was my first time using this service and I will definitely be back and
+                                    recommend to friends
+                                    <span class="ms-1">👍 👍</span>
+                                </p>
+                            </div>
+                            <div class="card border-0 shadow-sm p-3 mb-3 bg-white rounded" style="max-width: 500px;">
+                                <div class="d-flex align-items-center mb-2">
+                                    <img src="https://educibly.com/wp-content/themes/educibly2021/images/section-reviews__site-jabber/sitejabber-4.png"
+                                        alt="customer" class=" me-2" style="width: 60px; height: 60px; ">
+                                    <div>
+                                        <div class="d-flex align-items-center mb-1">
+                                            <img src="./download.svg" alt="" class="w-50">
+                                        </div>
+                                        <p class="mb-0 small">
+                                            <a href="#" class="text-primary fw-semibold text-decoration-none">Armin
+                                                H.</a> reviewed educibly.com
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="mb-0 text-dark small lh-base mt-2">
+                                    Thank you very much. The essay was well put together and much more than I was
+                                    expecting.
+                                    This was my first time using this service and I will definitely be back and
+                                    recommend to friends
+                                    <span class="ms-1">👍 👍</span>
+                                </p>
+                            </div>
+                            <div class="card border-0 shadow-sm p-3 mb-3 bg-white rounded" style="max-width: 500px;">
+                                <div class="d-flex align-items-center mb-2">
+                                    <img src="https://educibly.com/wp-content/themes/educibly2021/images/section-reviews__site-jabber/sitejabber-1.png"
+                                        alt="customer" class=" me-2" style="width: 60px; height: 60px; ">
+                                    <div>
+                                        <div class="d-flex align-items-center mb-1">
+                                            <img src="./download.svg" alt="" class="w-50">
+                                        </div>
+                                        <p class="mb-0 small">
+                                            <a href="#" class="text-primary fw-semibold text-decoration-none">Armin
+                                                H.</a> reviewed educibly.com
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="mb-0 text-dark small lh-base mt-2">
+                                    Thank you very much. The essay was well put together and much more than I was
+                                    expecting.
+                                    This was my first time using this service and I will definitely be back and
+                                    recommend to friends
+                                    <span class="ms-1">👍 👍</span>
+                                </p>
+                            </div>
+                            <div class="card border-0 shadow-sm p-3 mb-3 bg-white rounded" style="max-width: 500px;">
+                                <div class="d-flex align-items-center mb-2">
+                                    <img src="https://educibly.com/wp-content/themes/educibly2021/images/section-reviews__site-jabber/sitejabber-3.png"
+                                        alt="customer" class=" me-2" style="width: 60px; height: 60px; ">
+                                    <div>
+                                        <div class="d-flex align-items-center mb-1">
+                                            <img src="./download.svg" alt="" class="w-50">
+                                        </div>
+                                        <p class="mb-0 small">
+                                            <a href="#" class="text-primary fw-semibold text-decoration-none">Armin
+                                                H.</a> reviewed educibly.com
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="mb-0 text-dark small lh-base mt-2">
+                                    Thank you very much. The essay was well put together and much more than I was
+                                    expecting.
+                                    This was my first time using this service and I will definitely be back and
+                                    recommend to friends
+                                    <span class="ms-1">👍 👍</span>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center">With over 12 years of experience in the essay help industry, Educibly has
+                    developed a reputation for providing customer satisfaction. Indeed, today we have over 15,000
+                    satisfied customers worldwide and have written over 120,000 various academic papers on multiple
+                    topics for them, from Business and Management to Nursing and Programming.</p>
+                <p class="text-center py-3">We're extremely proud of the reviews and ratings our essay writing service
+                    has received on various platforms so far. See how our customers describe their experience of getting
+                    essay help from our professional writers.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container faq-container mt-top mb-4">
+        <div class="p-top heading-category text-center">
+            <h1 class="fw-bold">F A Q</h1>
+            <p class="fs-5 py-1 pb-4">Here you'll find answers to some of the most common questions.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="accordion mt-top" id="accordionExample">
+                    <!-- Accordion Item 1 -->
+                    <div class="accordion-item custom-accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed custom-accordion-button fs-5" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                                aria-controls="collapseOne">
+                                How much do I pay for writing service?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body custom-accordion-body">
+                                To get an answer to this question, you need to use our online calculator. You can find
+                                it on the order form.
+                                Fill out the questionnaire with relevant information, and you will see the exact price
+                                for your request.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- More accordion items... -->
+                    <!-- Accordion Item 2 -->
+                    <div class="accordion-item custom-accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed custom-accordion-button fs-5" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                How much do I pay for writing service?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body custom-accordion-body">
+                                To get an answer to this question, you need to use our online calculator. You can find
+                                it on the order form.
+                                Fill out the questionnaire with relevant information, and you will see the exact price
+                                for your request.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 3 -->
+                    <div class="accordion-item custom-accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed custom-accordion-button fs-5" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                How much do I pay for writing service?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body custom-accordion-body">
+                                To get an answer to this question, you need to use our online calculator. You can find
+                                it on the order form.
+                                Fill out the questionnaire with relevant information, and you will see the exact price
+                                for your request.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 4 -->
+                    <div class="accordion-item custom-accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed custom-accordion-button fs-5" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                aria-controls="collapseFour">
+                                How much do I pay for writing service?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                            <div class="accordion-body custom-accordion-body">
+                                To get an answer to this question, you need to use our online calculator. You can find
+                                it on the order form. Fill out the questionnaire with relevant information, and you will
+                                see the exact price for your request.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item custom-accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed custom-accordion-button fs-5" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                                aria-controls="collapseFive">
+                                How much do I pay for writing service?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
+                            <div class="accordion-body custom-accordion-body">
+                                To get an answer to this question, you need to use our online calculator. You can find
+                                it on the order form. Fill out the questionnaire with relevant information, and you will
+                                see the exact price for your request.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item custom-accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed custom-accordion-button fs-5" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                                aria-controls="collapseSix">
+                                How much do I pay for writing service?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix">
+                            <div class="accordion-body custom-accordion-body">
+                                To get an answer to this question, you need to use our online calculator. You can find
+                                it on the order form. Fill out the questionnaire with relevant information, and you will
+                                see the exact price for your request.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="col-lg-6">
+                <div class="accordion mt-top" id="accordionExample2">
+                    <!-- Accordion Item 1 -->
+                    <div class="accordion-item custom-accordion-item">
+                        <h2 class="accordion-header" id="headingOne-2">
+                            <button class="accordion-button collapsed custom-accordion-button fs-5" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseOne-2" aria-expanded="false"
+                                aria-controls="collapseOne-2">
+                                How much do I pay for writing service?
+                            </button>
+                        </h2>
+                        <div id="collapseOne-2" class="accordion-collapse collapse" aria-labelledby="headingOne-2"
+                            data-bs-parent="#accordionExample2">
+                            <div class="accordion-body custom-accordion-body">
+                                To get an answer to this question, you need to use our online calculator...
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 2 -->
+                    <div class="accordion-item custom-accordion-item">
+                        <h2 class="accordion-header" id="headingTwo-2">
+                            <button class="accordion-button collapsed custom-accordion-button fs-5" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo-2" aria-expanded="false"
+                                aria-controls="collapseTwo-2">
+                                How much do I pay for writing service?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo-2" class="accordion-collapse collapse" aria-labelledby="headingTwo-2"
+                            data-bs-parent="#accordionExample2">
+                            <div class="accordion-body custom-accordion-body">
+                                To get an answer to this question, you need to use our online calculator...
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 3 -->
+                    <div class="accordion-item custom-accordion-item">
+                        <h2 class="accordion-header" id="headingThree-2">
+                            <button class="accordion-button collapsed custom-accordion-button fs-5" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree-2" aria-expanded="false"
+                                aria-controls="collapseThree-2">
+                                How much do I pay for writing service?
+                            </button>
+                        </h2>
+                        <div id="collapseThree-2" class="accordion-collapse collapse" aria-labelledby="headingThree-2"
+                            data-bs-parent="#accordionExample2">
+                            <div class="accordion-body custom-accordion-body">
+                                To get an answer to this question, you need to use our online calculator...
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 4 -->
+                    <div class="accordion-item custom-accordion-item">
+                        <h2 class="accordion-header" id="headingFour-2">
+                            <button class="accordion-button collapsed custom-accordion-button fs-5" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFour-2" aria-expanded="false"
+                                aria-controls="collapseFour-2">
+                                How much do I pay for writing service?
+                            </button>
+                        </h2>
+                        <div id="collapseFour-2" class="accordion-collapse collapse" aria-labelledby="headingFour-2"
+                            data-bs-parent="#accordionExample2">
+                            <div class="accordion-body custom-accordion-body">
+                                To get an answer to this question, you need to use our online calculator...
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 5 -->
+                    <div class="accordion-item custom-accordion-item">
+                        <h2 class="accordion-header" id="headingFive-2">
+                            <button class="accordion-button collapsed custom-accordion-button fs-5" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFive-2" aria-expanded="false"
+                                aria-controls="collapseFive-2">
+                                How much do I pay for writing service?
+                            </button>
+                        </h2>
+                        <div id="collapseFive-2" class="accordion-collapse collapse" aria-labelledby="headingFive-2"
+                            data-bs-parent="#accordionExample2">
+                            <div class="accordion-body custom-accordion-body">
+                                To get an answer to this question, you need to use our online calculator...
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 6 -->
+                    <div class="accordion-item custom-accordion-item">
+                        <h2 class="accordion-header" id="headingSix-2">
+                            <button class="accordion-button collapsed custom-accordion-button fs-5" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseSix-2" aria-expanded="false"
+                                aria-controls="collapseSix-2">
+                                How much do I pay for writing service?
+                            </button>
+                        </h2>
+                        <div id="collapseSix-2" class="accordion-collapse collapse" aria-labelledby="headingSix-2"
+                            data-bs-parent="#accordionExample2">
+                            <div class="accordion-body custom-accordion-body">
+                                To get an answer to this question, you need to use our online calculator...
                             </div>
                         </div>
                     </div>
@@ -1421,19 +1799,232 @@
             </div>
         </div>
     </div>
+    <div class="container-fluid bg-lg-tertiary mt-top pb-4 p-top">
+        <div class="container why-choose-conatiner">
+            <div class="div-01 text-start">
+                <h1 class="fw-bold">Why You Should Choose This Expert Writing Service</h1>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p class="p-top">Educibly is a well-known name among students in the US and abroad. Our company
+                            has been
+                            serving top-quality academic products for over 12 years now, and we are only getting
+                            started. The team welcomes new experts regularly as the demand for paper writing services
+                            increases at lightning speed. Whether you need help writing paper or essay or you need a
+                            reliable online tutor to complete a specific task, we’ve got you covered.</p>
+                        <p class="py-">Our focus remains on quality. Every paper writer working here is a tried and
+                            tested
+                            professional with extensive expertise. Every paper delivered is double-checked and
+                            guaranteed to follow custom instructions provided by the customer. Every ‘do my paper for
+                            me’ request is handled with care and individual attention.</p>
+                        <p>Educibly stands out from the competition and offers more than just a custom essay writing
+                            service:</p>
+                        <ul class="green-square-bullet">
+                            <li>Help with different academic subjects, from Marketing to Engineering (50+ disciplines).
+                            </li>
+                            <li>Help with different academic subjects, from Marketing to Engineering (50+ disciplines).
+                            </li>
+                            <li>Help with different academic subjects, from Marketing to Engineering (50+ disciplines).
+                            </li>
+                            <li>Help with different academic subjects, from Marketing to Engineering (50+ disciplines).
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="p-top">If you are looking for the best writing services, Educibly is your ultimate
+                            destination.
+                            Profound expertise and commitment to customer satisfaction, topped with cutting-edge
+                            security technologies, will ensure your safe and pleasant experience with us. Don’t think
+                            twice about texting us ‘pay for essay.’ We are here 24/7, and we are ready.
+
+                        </p>
+                        <img src="https://educibly.com/wp-content/uploads/2025/03/front-page-seo-1.webp" alt=""
+                            class="w-100">
+                    </div>
+                </div>
+
+            </div>
+            <div class="div-02 text-start ">
+                <h1 class="fw-bold p-top">What Do I Get If You Write My College Paper</h1>
+                <P class="p-top">Let’s break down some of the key reasons and situations that urge students to pay for
+                    papers.</P>
+                <p>The most important advantage of working with a professional paper writer is the chance to save some
+                    time. Let’s face it: academic assignments are the greatest time consumers. A student can spend days
+                    and weeks, if not months, working on one. Therefore, delegating this task to an essay writing
+                    service is always a wise decision to save time.</p>
+                <p>Another attractive benefit is the effort you spend working on an irrelevant task. Have you ever
+                    wondered why specific homework assignments make it to the syllabus, considering their ambiguity?
+                    Don’t even waste your time questioning the reason behind the teacher’s decision. Simply pay for
+                    paper writing and get it over with.</p>
+                <p>There’s one thing we must clarify: our paper writing service can’t provide any written guarantees of
+                    your future improved academic performance. On our behalf, we can guarantee that the paper written by
+                    our paper writer will be of the highest quality, follow your individual instructions, and have zero
+                    plagiarism. However, the rest depends on your effort. If paper grading is based solely on content
+                    quality, you can rest assured that your paper will score a high grade. However, there could be other
+                    factors taken into account, such as your presentation of the paper.</p>
+                <p>Please keep in mind that our paper writing service will do everything possible to ensure a top
+                    result. So, if you need help interpreting the document or have any questions, do not hesitate to
+                    contact us or your paper writer immediately. We are a top-rated paper writing service with a
+                    successful track record and thousands of positive reviews. You can find feedback our customers
+                    shared on the website or other reputable review platforms, such as Sitejabber and Trustpilot.</p>
+
+            </div>
+        </div>
+    </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
+    <!-- <footer class="text-white p-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <ul>
+                        <li class="py-2">Case Study Writing Service</li>
+                        <li class="py-2">Case Study Writing Service</li>
+                        <li>Case Study Writing Service</li>
+                        <li>Case Study Writing Service</li>
+                        <li>Case Study Writing Service</li>
+                        <li>Case Study Writing Service</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+     <footer class="footer">
+        <!-- Service Links Section -->
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-md-3 col-6">
+                    <a href="#">Case Study Writing Service</a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <a href="#">Military Essay</a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <a href="#">Academic Writing Service</a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <a href="#">Term Paper Writing Service</a>
+                </div>
+            </div>
+            
+            <div class="row mb-3">
+                <div class="col-md-3 col-6">
+                    <a href="#">Coursework Writing Service</a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <a href="#">Dissertation Writing Service</a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <a href="#">Do My Homework</a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <a href="#">Do My Assignment</a>
+                </div>
+            </div>
+            
+            <div class="row mb-3">
+                <div class="col-md-3 col-6">
+                    <a href="#">Buy Research Paper</a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <a href="#">Thesis Writing Service</a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <a href="#">Research Proposal</a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <a href="#">Buy Custom Essay</a>
+                </div>
+            </div>
+            
+            
+            <!-- Additional content that will be hidden by default -->
+            <div id="additionalContent" style="display: none;">
+                <div class="row mb-3">
+                    <div class="col-md-3 col-6">
+                        <a href="#">Literature Review</a>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="#">Lab Report Writing</a>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="#">Book Report</a>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="#">Scholarship Essay</a>
+                    </div>
+                </div>
+                
+                <div class="row mb-3">
+                    <div class="col-md-3 col-6">
+                        <a href="#">Annotated Bibliography</a>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="#">Personal Statement</a>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="#">Admission Essay</a>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="#">Speech Writing</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12 text-center show-more" id="toggleButton">
+                    Show more <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+            <hr class="divider">
+            
+            <!-- Footer Info Section -->
+            <div class="row">
+                <!-- Logo and Description Column -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="logo">
+                        <h2 class="fw-bold text-white">educibly<span>.</span></h2>
+                    </div>
+                    <p class="mb-4">Safe and secure online platform that matches students in need of academic assistance with subject-matter experts</p>
+                    
+                    <p>We accept:</p>
+                    <div class="payment-icons">
+                        <img width="152" height="24" src="https://educibly.com/wp-content/themes/educibly2021/images/footer/payment-cards-up-row-color.svg" alt="payments">
+                        <img width="157" height="24" src="https://educibly.com/wp-content/themes/educibly2021/images/footer/payment-cards-bottom-row-color.svg" alt="payments">
+                    </div>
+                </div>
+                
+                <!-- Company Links Column -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <ul class="list-unstyled">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Guarantees</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Disclaimer Column -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="footer-title">HOW OUR SERVICE IS USED:</h5>
+                    <p class="disclaimer">
+                        Educibly.com service is used for research, consulting, and inspirational purposes only! 
+                        Papers received from educibly.com are NOT meant for submission! Never hand in papers 
+                        received from our company! Write your own papers and use educibly.com only as a 
+                        reference. Educibly.com is strongly against any form of cheating.
+                    </p>
+                </div>
+                
+                <!-- Contact Column -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">PHONE & EMAIL</h5>
+                    <div class="contact-info">
+                        <p><img src="https://flagcdn.com/16x12/us.png" class="flag" alt="US"> +1 775 553 8687</p>
+                    </div>
+                    <p>support@educibly.com</p>
+                </div>
+            </div>
+        </div>
+     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -1445,7 +2036,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./script.js"></script>
 </body>

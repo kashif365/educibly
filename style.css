@@ -1,6 +1,9 @@
 .warning {
     color: ;
 }
+.bg-blue{
+    background-color: #4e90db;
+}
 
 body {
     font-family: 'Raleway', sans-serif !important;
@@ -52,6 +55,9 @@ body {
 
 .mt-top {
     margin-top: 5%;
+}
+.mb-bottom{
+    margin-bottom: 5%;
 }
 
 .UC {
@@ -714,35 +720,40 @@ body {
 
 .testimonial-card {
     padding: 25px;
-    height: 100%;
+    height:20rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
     margin: 10px;
 }
+.testimonial-card-fb{
+    /* width: 45rem; */
+}
 
 .profile-img {
-    width: 60px;
-    height: 60px;
+    /* width: 60px; */
+    /* height: 60px; */
     border-radius: 50%;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
-.stars {
-    color: #00b67a;
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+.star {
+    margin-left: -4rem;
+    /* color: #00b67a; */
+    /* width: 10% ; */
+    /* font-size: 1.2rem; */
+    /* margin-bottom: 15px; */
 }
 
-.reviewer-name {
+/* .reviewer-name {
     font-weight: 600;
     margin-bottom: 5px;
-}
+} */
 
-.website {
+/* .website {
     color: #666;
     font-size: 0.9rem;
     margin-bottom: 15px;
-}
+} */
 
 .owl-nav {
     position: absolute;
@@ -791,3 +802,117 @@ body {
         display: none !important;
     }
 }
+.custom-accordion-item{
+    margin-top: 3rem !important;
+}
+.custom-accordion-item:has(.accordion-collapse.show) {
+ border: none !important;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Style when the accordion is expanded */
+.accordion-collapse.show + .custom-accordion-body,
+.accordion-collapse.show .custom-accordion-body {
+    /* background-color: #f0f8ff; light blue background */
+    /*  */
+    padding: 1.25rem !important;
+    padding-bottom: 2rem !important;
+    font-size: 1.2rem;
+    
+}
+.custom-accordion-button:not(.collapsed) {
+    background-color: transparent !important; /* Or use any color */
+    color: #000; /* Optional: change text color */
+    box-shadow: none; /* Removes the default focus shadow */
+    border-bottom: 2px solid #fdc90d !important;
+    /* border-color: transparent; */
+    
+}
+.custom-accordion-button {
+    box-shadow: none !important;
+    /* border: none !important; */
+    /* border-bottom: 2px solid #fdc90d !important; */
+    
+}
+
+
+.custom-accordion-button::after {
+    color: #fdc90d !important;
+    /* box-shadow: none !important; */
+    /* 
+    */
+    
+}
+footer{
+    background-color: #1a1a1a;
+}
+
+ .footer {
+            background-color: #1a1a1a;
+            color: #aaaaaa;
+            padding: 50px 0 30px 0;
+        }
+        
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s;
+            display: block;
+            margin-bottom: 15px;
+        }
+        
+        .footer a:hover {
+            color: #ffa500;
+        }
+        
+        .logo {
+            margin-bottom: 20px;
+        }
+        
+        .logo span {
+            color: #ffa500;
+            font-size: 24px;
+        }
+        
+        .payment-icons img {
+            height: 30px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .divider {
+            border-top: 1px solid #333;
+            margin: 20px 0;
+        }
+        
+        .disclaimer {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .footer-title {
+            color: #777;
+            margin-bottom: 25px;
+            font-size: 16px;
+        }
+        
+         .show-more {
+            color: white;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+        }
+        
+        .show-more i {
+            margin-left: 5px;
+        }
+        
+        .contact-info {
+            margin-bottom: 15px;
+        }
+        
+        .flag {
+            width: 20px;
+            margin-right: 10px;
+        }

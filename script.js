@@ -39,7 +39,7 @@ document.querySelectorAll('.service-btn').forEach(btn => {
     });
 });
 $(document).ready(function () {
-    $(".owl-carousel").not('.owl-carousel-2').owlCarousel({
+    $(".owl-carousel").not('.owl-carousel-2, .testimonial-carousel').owlCarousel({
         loop: true,
         margin: 20,
         nav: true,
@@ -194,3 +194,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+            const toggleButton = document.getElementById('toggleButton');
+            const additionalContent = document.getElementById('additionalContent');
+            
+            toggleButton.addEventListener('click', function() {
+                // Toggle visibility of the additional content
+                if (additionalContent.style.display === 'none') {
+                    additionalContent.style.display = 'block';
+                    toggleButton.innerHTML = 'Show less <i class="fas fa-chevron-up"></i>';
+                } else {
+                    additionalContent.style.display = 'none';
+                    toggleButton.innerHTML = 'Show more <i class="fas fa-chevron-down"></i>';
+                }
+            });
+        });
