@@ -44,7 +44,7 @@ document.querySelectorAll('.service-btn').forEach(btn => {
     });
 });
 $(document).ready(function () {
-    $(".owl-carousel").not('.owl-carousel-2, .testimonial-carousel, .service-carousel, .about-card').owlCarousel({
+    $(".owl-carousel").not('.owl-carousel-2, .testimonial-carousel, .service-carousel, .about-card, .writer-carousel').owlCarousel({
         loop: true,
         margin: 20,
         nav: true,
@@ -158,6 +158,29 @@ $(document).ready(function () {
             items: 1
           },
           768: {
+            items: 2
+          }
+        }
+      });
+    });
+     $(document).ready(function(){
+      $(".writer-carousel").owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: true,
+        dots: false,
+        navText: [
+            '<img src="./arrow-sm-left-svgrepo-com.svg" alt="Prev">',
+            '<img src="./arrow-sm-right-svgrepo-com.svg" alt="Next">'
+        ],
+        responsive:{
+          0:{
+            items: 1
+          },
+          768:{
+            items: 1
+          },
+          992:{
             items: 2
           }
         }
@@ -348,3 +371,25 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Trigger scroll event on page load to check initial position
     window.dispatchEvent(new Event("scroll"));
+
+     $(document).ready(function () {
+            // Hide all review cards
+            $('.review-box .col-lg-6').hide();
+
+            // Show only the first 4
+            $('.review-box .col-lg-6:lt(4)').fadeIn(300);
+
+            $('#show-more').click(function () {
+                $('.review-box .col-lg-6').fadeIn(400);
+                $('#show-more').fadeOut(200);
+                $('#show-less').fadeIn(200);
+            });
+
+            $('#show-less').click(function () {
+                $('.review-box .col-lg-6').fadeOut(200, function () {
+                    $('.review-box .col-lg-6:lt(4)').fadeIn(300);
+                });
+                $('#show-less').fadeOut(200);
+                $('#show-more').fadeIn(200);
+            });
+        });
