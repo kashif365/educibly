@@ -293,3 +293,42 @@ document.addEventListener('DOMContentLoaded', function() {
                 handleCarousel();
             });
         });
+
+        const backToTopButton = document.getElementById("myBtn");
+    
+    // Show/hide button based on scroll position
+    window.addEventListener("scroll", function() {
+      if (window.scrollY > 300) {
+        backToTopButton.classList.remove("hidden");
+      } else {
+        backToTopButton.classList.add("hidden");
+      }
+    });
+    
+    // Smooth scroll to top with precision
+    backToTopButton.addEventListener("click", function(e) {
+      e.preventDefault();
+      
+      // For browsers that don't support smooth scrolling natively
+      const scrollToTop = function() {
+        const currentPosition = window.pageYOffset;
+        if (currentPosition > 0) {
+          // Create a smooth, pixel-perfect scroll
+          window.scrollTo(0, currentPosition - currentPosition / 8);
+          requestAnimationFrame(scrollToTop);
+        }
+      };
+      
+      // Try native smooth scrolling first, fallback to custom function
+      if ("scrollBehavior" in document.documentElement.style) {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      } else {
+        requestAnimationFrame(scrollToTop);
+      }
+    });
+    
+    // Trigger scroll event on page load to check initial position
+    window.dispatchEvent(new Event("scroll"));

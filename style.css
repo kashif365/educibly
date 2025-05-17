@@ -910,3 +910,43 @@ footer {
         margin-bottom: 1.5rem;
     }
 }
+
+#myBtn {
+      position: fixed;
+      bottom: 4rem;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      z-index: 999;
+    }
+    
+    /* Arrow icon */
+    #myBtn img {
+      width: 4rem;
+      height:4rem;
+      /* fill: #555; */
+      transition: all 0.3s ease;
+    }
+    
+    /* On Hover Effect */
+    #myBtn:hover {
+      background-color: #7dbbf1;
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    }
+    
+    #myBtn:hover svg {
+      fill: white;
+    }
+    #myBtn.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+    
