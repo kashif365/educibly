@@ -44,7 +44,7 @@ document.querySelectorAll('.service-btn').forEach(btn => {
     });
 });
 $(document).ready(function () {
-    $(".owl-carousel").not('.owl-carousel-2, .testimonial-carousel, .service-carousel').owlCarousel({
+    $(".owl-carousel").not('.owl-carousel-2, .testimonial-carousel, .service-carousel, .about-card').owlCarousel({
         loop: true,
         margin: 20,
         nav: true,
@@ -147,6 +147,22 @@ $(document).ready(function () {
         }
     });
 });
+ $(document).ready(function(){
+      $(".about-card").owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: true,
+        dots: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 2
+          }
+        }
+      });
+    });
 
 
 
