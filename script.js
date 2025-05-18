@@ -393,3 +393,4 @@ document.addEventListener('DOMContentLoaded', function() {
                 $('#show-more').fadeIn(200);
             });
         });
+        
