@@ -1,0 +1,204 @@
+@media (max-width: 575.98px) {}
+
+@media (max-width: 767.98px) {
+    .service-heading {
+        padding-top: 5% !important;
+    }
+
+    .category-col {
+        display: grid;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .feature-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feature-card {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        margin: auto;
+        height: 100%;
+    }
+
+    .feature-card p {
+        text-align: center;
+        margin: auto;
+        max-width: 60%;
+    }
+
+    .card {
+        margin: auto;
+        margin-bottom: 5%;
+    }
+
+    .category-cont .row {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center !important;
+    }
+
+    .category-cont .col-lg-4 {
+        /* margin: 20px auto; */
+        margin-bottom: 5%;
+    }
+
+    .category-cont .col-lg-4 img {
+        width: 20%;
+        display: block;
+        margin: 0 auto !important;
+    }
+
+
+    .category-cont .col-lg-4 p {
+        max-width: 20rem;
+        text-align: center !important;
+        margin: auto;
+    }
+
+    .category-cont .col-lg-4 h3 {
+        text-align: center !important;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    #pills-tab {
+        display: flex;
+        flex-wrap: wrap;
+        /* allow wrap on very small screens */
+        justify-content: center;
+        /* center items */
+        gap: 1rem;
+        /* spacing between buttons */
+        padding: 0;
+        margin: 0;
+    }
+
+    #pills-tab .nav-item {
+        flex: 0 1 auto;
+        /* allow flexible shrinking */
+    }
+
+    #pills-tab .nav-link {
+        white-space: nowrap;
+        /* prevent button text from breaking */
+    }
+
+
+    .hero-section-team {
+        display: grid !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin-top: 10%;
+
+    }
+
+    .hero-section-text {
+        text-align: center !important;
+        margin: auto;
+    }
+
+    .hero-section-text .pra-2 {
+        margin: auto;
+
+    }
+
+    .mt-n4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .step-container {
+        margin: auto;
+        text-align: center;
+    }
+
+    .step-container p {
+        max-width: 50%;
+        margin: auto;
+    }
+
+    .writer-card {
+        padding: 15px;
+    }
+
+    .writer-card .d-flex {
+        flex-direction: column;
+        align-items: center !important;
+        text-align: center;
+    }
+
+    .writer-img-container {
+        margin-bottom: 10px;
+    }
+
+    .writer-halo {
+
+        margin: auto;
+        position: absolute;
+        top: 0px;
+        left: 0px !important;
+    }
+
+    .writer-img {
+        margin: auto !important;
+    }
+
+    .writer-img img {
+        width: 80px;
+        height: auto;
+
+    }
+
+    .writer-name {
+        font-size: 1.2rem;
+        /* display: inline-block !important; */
+        /* margin: auto !important; */
+        text-align: center !important;
+    }
+
+    .writer-badge {
+        display: inline-block;
+        margin: auto !important;
+        margin-top: 5px;
+        font-size: 0.85rem;
+    }
+
+    .writer-specialties {
+        font-size: 0.85rem;
+        margin-top: 10px;
+        padding: 0 10px;
+    }
+
+    .writer-bio {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .owl-carousel .item {
+        padding: 10px;
+    }
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1399.98px) {}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .order-card {
+
+        margin: auto;
+        margin-top: 5%;
+    }
+}

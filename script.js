@@ -1,5 +1,5 @@
 
-$(document).ready(function(){
+$(document).ready(function () {
     $("#navbar").load("navbar.html");
     $("#footer").load("footer.html");
 });
@@ -73,8 +73,8 @@ $(document).ready(function () {
     $(".owl-carousel-2").not('.testimonial-carousel').owlCarousel({
         loop: true,
         margin: 20,
-        nav:true,
-        dots: false,
+        nav: false,
+        dots: true,
         navText: [
             '<img src="./arrow-sm-left-svgrepo-com.svg" alt="Prev">',
             '<img src="./arrow-sm-right-svgrepo-com.svg" alt="Next">'
@@ -99,8 +99,8 @@ $(document).ready(function () {
     $(".testimonial-carousel").owlCarousel({
         loop: true,
         margin: 20,
-        nav:true,
-        dots: false,
+        nav: false,
+        dots: true,
         navText: [
             '<img src="./arrow-sm-left-svgrepo-com.svg" alt="Prev">',
             '<img src="./arrow-sm-right-svgrepo-com.svg" alt="Next">'
@@ -125,7 +125,7 @@ $(document).ready(function () {
     $(".service-carousel").owlCarousel({
         loop: true,
         margin: 20,
-        nav:true,
+        nav: true,
         dots: false,
         navText: [
             '<img src="./arrow-sm-left-svgrepo-com.svg" alt="Prev">',
@@ -142,29 +142,31 @@ $(document).ready(function () {
                 items: 3
             },
             1200: {
-                items:3
+                items: 3
             }
         }
     });
 });
- $(document).ready(function(){
-      $(".about-card").owlCarousel({
+$(document).ready(function () {
+    $(".about-card").owlCarousel({
         loop: true,
         margin: 20,
-        nav: true,
-        dots: true,
+        nav: false,
+        dots: false,
+        autoplay:true,
+        autoplayTimeout: 3000,
         responsive: {
-          0: {
-            items: 1
-          },
-          768: {
-            items: 2
-          }
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2
+            }
         }
-      });
     });
-     $(document).ready(function(){
-      $(".writer-carousel").owlCarousel({
+});
+$(document).ready(function () {
+    $(".writer-carousel").owlCarousel({
         loop: true,
         margin: 20,
         nav: true,
@@ -173,19 +175,19 @@ $(document).ready(function () {
             '<img src="./arrow-sm-left-svgrepo-com.svg" alt="Prev">',
             '<img src="./arrow-sm-right-svgrepo-com.svg" alt="Next">'
         ],
-        responsive:{
-          0:{
-            items: 1
-          },
-          768:{
-            items: 1
-          },
-          992:{
-            items: 2
-          }
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 1
+            },
+            992: {
+                items: 2
+            }
         }
-      });
     });
+});
 
 
 
@@ -265,132 +267,165 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-            const toggleButton = document.getElementById('toggleButton');
-            const additionalContent = document.getElementById('additionalContent');
-            
-            toggleButton.addEventListener('click', function() {
-                // Toggle visibility of the additional content
-                if (additionalContent.style.display === 'none') {
-                    additionalContent.style.display = 'block';
-                    toggleButton.innerHTML = 'Show less <i class="fas fa-chevron-up"></i>';
-                } else {
-                    additionalContent.style.display = 'none';
-                    toggleButton.innerHTML = 'Show more <i class="fas fa-chevron-down"></i>';
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleButton = document.getElementById('toggleButton');
+    const additionalContent = document.getElementById('additionalContent');
+
+    toggleButton.addEventListener('click', function () {
+        // Toggle visibility of the additional content
+        if (additionalContent.style.display === 'none') {
+            additionalContent.style.display = 'block';
+            toggleButton.innerHTML = 'Show less <i class="fas fa-chevron-up"></i>';
+        } else {
+            additionalContent.style.display = 'none';
+            toggleButton.innerHTML = 'Show more <i class="fas fa-chevron-down"></i>';
+        }
+    });
+});
+
+
+function handleCarousel() {
+    if (window.innerWidth < 992) {
+        // Only initialize if not already initialized
+        if (!$('.experts-carousel').hasClass('owl-loaded')) {
+            $('.experts-carousel').removeClass('d-none').addClass('d-block');
+            $('.experts-container .d-lg-block').addClass('d-none');
+
+            // Initialize Owl Carousel
+            $('.experts-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    576: {
+                        items: 2
+                    },
+                    768: {
+                        items: 3
+                    }
                 }
             });
-        });
-
-
-        function handleCarousel() {
-            if (window.innerWidth < 992) {
-                // Only initialize if not already initialized
-                if (!$('.experts-carousel').hasClass('owl-loaded')) {
-                    $('.experts-carousel').removeClass('d-none').addClass('d-block');
-                    $('.experts-container .d-lg-block').addClass('d-none');
-                    
-                    // Initialize Owl Carousel
-                    $('.experts-carousel').owlCarousel({
-                        loop: true,
-                        margin: 10,
-                        nav: true,
-                        dots: true,
-                        autoplay: true,
-                        autoplayTimeout: 5000,
-                        autoplayHoverPause: true,
-                        responsive: {
-                            0: {
-                                items: 1
-                            },
-                            576: {
-                                items: 2
-                            },
-                            768: {
-                                items: 3
-                            }
-                        }
-                    });
-                }
-            } else {
-                // Destroy carousel if it's initialized
-                if ($('.experts-carousel').hasClass('owl-loaded')) {
-                    $('.experts-carousel').owlCarousel('destroy');
-                }
-                
-                // Show regular layout, hide carousel
-                $('.experts-carousel').addClass('d-none').removeClass('d-block');
-                $('.experts-container .d-lg-block').removeClass('d-none');
-            }
+        }
+    } else {
+        // Destroy carousel if it's initialized
+        if ($('.experts-carousel').hasClass('owl-loaded')) {
+            $('.experts-carousel').owlCarousel('destroy');
         }
 
-        // Run on page load
-        $(document).ready(function() {
-            handleCarousel();
-            
-            // Run on window resize
-            $(window).resize(function() {
-                handleCarousel();
-            });
-        });
+        // Show regular layout, hide carousel
+        $('.experts-carousel').addClass('d-none').removeClass('d-block');
+        $('.experts-container .d-lg-block').removeClass('d-none');
+    }
+}
 
-        const backToTopButton = document.getElementById("myBtn");
-    
-    // Show/hide button based on scroll position
-    window.addEventListener("scroll", function() {
-      if (window.scrollY > 300) {
-        backToTopButton.classList.remove("hidden");
-      } else {
-        backToTopButton.classList.add("hidden");
-      }
+// Run on page load
+$(document).ready(function () {
+    handleCarousel();
+
+    // Run on window resize
+    $(window).resize(function () {
+        handleCarousel();
     });
-    
-    // Smooth scroll to top with precision
-    backToTopButton.addEventListener("click", function(e) {
-      e.preventDefault();
-      
-      // For browsers that don't support smooth scrolling natively
-      const scrollToTop = function() {
+});
+
+const backToTopButton = document.getElementById("myBtn");
+
+// Show/hide button based on scroll position
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 300) {
+        backToTopButton.classList.remove("hidden");
+    } else {
+        backToTopButton.classList.add("hidden");
+    }
+});
+
+// Smooth scroll to top with precision
+backToTopButton.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    // For browsers that don't support smooth scrolling natively
+    const scrollToTop = function () {
         const currentPosition = window.pageYOffset;
         if (currentPosition > 0) {
-          // Create a smooth, pixel-perfect scroll
-          window.scrollTo(0, currentPosition - currentPosition / 8);
-          requestAnimationFrame(scrollToTop);
+            // Create a smooth, pixel-perfect scroll
+            window.scrollTo(0, currentPosition - currentPosition / 8);
+            requestAnimationFrame(scrollToTop);
         }
-      };
-      
-      // Try native smooth scrolling first, fallback to custom function
-      if ("scrollBehavior" in document.documentElement.style) {
+    };
+
+    // Try native smooth scrolling first, fallback to custom function
+    if ("scrollBehavior" in document.documentElement.style) {
         window.scrollTo({
-          top: 0,
-          behavior: "smooth"
+            top: 0,
+            behavior: "smooth"
         });
-      } else {
+    } else {
         requestAnimationFrame(scrollToTop);
-      }
+    }
+});
+
+// Trigger scroll event on page load to check initial position
+window.dispatchEvent(new Event("scroll"));
+
+$(document).ready(function () {
+    // Hide all review cards
+    $('.review-box .col-lg-6').hide();
+
+    // Show only the first 4
+    $('.review-box .col-lg-6:lt(4)').fadeIn(300);
+
+    $('#show-more').click(function () {
+        $('.review-box .col-lg-6').fadeIn(400);
+        $('#show-more').fadeOut(200);
+        $('#show-less').fadeIn(200);
     });
-    
-    // Trigger scroll event on page load to check initial position
-    window.dispatchEvent(new Event("scroll"));
 
-     $(document).ready(function () {
-            // Hide all review cards
-            $('.review-box .col-lg-6').hide();
-
-            // Show only the first 4
+    $('#show-less').click(function () {
+        $('.review-box .col-lg-6').fadeOut(200, function () {
             $('.review-box .col-lg-6:lt(4)').fadeIn(300);
+        });
+        $('#show-less').fadeOut(200);
+        $('#show-more').fadeIn(200);
+    });
+});
+
+$(document).ready(function () {
+    function handleResponsiveDisplay() {
+        if ($(window).width() < 768) {
+            $('.extra-col').hide(); // Hide extra columns on small devices
+            $('#show-more').show();
+            $('#show-less').hide();
 
             $('#show-more').click(function () {
-                $('.review-box .col-lg-6').fadeIn(400);
-                $('#show-more').fadeOut(200);
-                $('#show-less').fadeIn(200);
+                $('.extra-col').slideDown();
+                $('#show-more').hide();
+                $('#show-less').show();
             });
 
             $('#show-less').click(function () {
-                $('.review-box .col-lg-6').fadeOut(200, function () {
-                    $('.review-box .col-lg-6:lt(4)').fadeIn(300);
-                });
-                $('#show-less').fadeOut(200);
-                $('#show-more').fadeIn(200);
+                $('.extra-col').slideUp();
+                $('#show-more').show();
+                $('#show-less').hide();
             });
-        });
-        
+        } else {
+            // Reset everything on large screens
+            $('.extra-col').show();
+            $('#show-more, #show-less').hide();
+        }
+    }
+
+    // Initial check
+    handleResponsiveDisplay();
+
+    // Re-check on window resize
+    $(window).resize(function () {
+        handleResponsiveDisplay();
+    });
+});

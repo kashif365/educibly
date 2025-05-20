@@ -25,6 +25,10 @@ body {
         font-size: 45%;
     }
 
+    .hero-section {
+        padding-top: 12% !important;
+        text-align:  !important;
+    }
 
 
 }
@@ -40,6 +44,14 @@ body {
 
 
 }
+
+
+@media (max-width: 575.98px) {}
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+@media (min-width: 768px) and (max-width: 1399.98px) {}
+
 /* Remove border from toggler */
 .navbar-toggler {
     border: 0 !important;
@@ -54,7 +66,7 @@ body {
 }
 
 /* Lines of the Toggler */
-.toggler-icon{
+.toggler-icon {
     width: 30px;
     height: 3px;
     background-color: #757779;
@@ -63,7 +75,7 @@ body {
 }
 
 /* Adds Space between the lines */
-.middle-bar{
+.middle-bar {
     margin: 5px auto;
 }
 
@@ -82,6 +94,7 @@ body {
     transform: rotate(-45deg);
     transform-origin: 10% 90%;
 }
+
 /* State when navbar is opened (END) */
 
 /* State when navbar is collapsed (START) */
@@ -97,6 +110,7 @@ body {
 .navbar-toggler.collapsed .bottom-bar {
     transform: rotate(0);
 }
+
 /* State when navbar is collapsed (END) */
 
 /* Color of Toggler when collapsed */
@@ -157,8 +171,8 @@ body {
 }
 
 .fs-40 {
-    font-size: 3.5rem;
-    font-weight: 800 !important;
+    font-size: 3.1rem;
+    font-weight: 900 !important;
 }
 
 .collapse a {
@@ -214,6 +228,7 @@ body {
     background-color: #f2f2f2;
     /* margin-top:5%; */
     padding: 1%;
+    font-weight: 800;
 }
 
 .btn:hover {
@@ -286,6 +301,8 @@ body {
 .hire-btn:hover {
     background-color: #e0a800;
 }
+
+@media screen {}
 
 .service-container {
     max-width: 1200px;
@@ -421,20 +438,26 @@ body {
     margin: 0 auto 15px;
 } */
 
+
+
+
 .feature-icon img {
-    max-width: 5rem;
-    max-height: 5rem;
     padding-bottom: 5%;
+    max-width: 5rem;
+    /* height: 7rem; */
+    /* Uncomment if needed */
 }
 
-/* .feature-card {
-    text-align: center;
+
+.feature-card {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
     padding: 20px;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    margin: 10px;
+    margin: auto;
     height: 100%;
-} */
+}
 
 /* Custom Owl Carousel Navigation */
 /* .owl-nav {
@@ -564,7 +587,8 @@ body {
 .subscriptions-container {
     margin-bottom: 5rem;
     background-color: #f2f2f2;
-    height: 840px;
+    height: 86%;
+    padding: 5% 0;
 
 }
 
@@ -840,6 +864,16 @@ body {
     right: -20px;
 }
 
+@media (max-width:768px) {
+    .owl-prev {
+        left: 24px !important;
+    }
+
+    .owl-next {
+        right: -24px;
+    }
+}
+
 .owl-prev span,
 .owl-next span {
     font-size: 30px;
@@ -852,13 +886,13 @@ body {
     margin: 0 auto;
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
 
     .owl-prev,
     .owl-next {
         display: none !important;
     }
-}
+} */
 
 .custom-accordion-item {
     margin-top: 3rem !important;
@@ -1205,6 +1239,9 @@ footer {
         /* max-width: 60%; */
         /* margin: auto; */
     }
+    .mt-n4{
+        margin-top: -5% !important;
+    }
 
     .step-container-main {
         margin-top: 5%;
@@ -1377,58 +1414,65 @@ footer {
         width: 560px;
         height: 200px;
         border: 1px;
-        border-radius:0px;
+        border-radius: 0px;
     }
 
     .cos-div a {
         text-decoration: none;
     }
-    .review{
+
+    .review {
         padding-top: 5%;
     }
-    .usa-div{
+
+    .usa-div {
         font-size: .8rem;
     }
-    hr{
+
+    hr {
         width: 110%;
         margin-left: -5% !important;
     }
 
-    
+
 }
-.guarantee-page{
-     .hero-section {
+
+.guarantee-page {
+    .hero-section {
         padding-top: 8% !important;
         /* text-align: center; */
         /* max-width: 60%; */
         /* margin: auto; */
     }
-    .hero-section h1{
+
+    .hero-section h1 {
         max-width: 75%;
         margin: auto;
         /* color: green !important; */
     }
 }
-.blog-page{
-    .bg-lg-yellow{
+
+.blog-page {
+    .bg-lg-yellow {
         background-color: #f2efe8;
     }
-    .blog-text a{
+
+    .blog-text a {
         text-decoration: none;
         color: black;
     }
-    
-    .line{
+
+    .line {
         width: 75%;
-        margin-top:2%;
+        margin-top: 2%;
         border: 1px #b6b6b6;
         /* border-bottom: #666; */
         border-bottom-style: dashed;
     }
 
-    .line-2{
+    .line-2 {
         width: 75%;
-        margin-top:1%;
+        margin-top: 1%;
         border: 1px #b6b6b6;
         /* border-bottom: #666; */
         border-bottom-style: dashed;
