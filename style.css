@@ -58,6 +58,7 @@ body {
     border: 0 !important;
 }
 
+/* Remove default focus/outline styling */
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
@@ -66,39 +67,37 @@ body {
     border: 0 !important;
 }
 
-/* Lines of the Toggler */
+/* Toggler icon bars */
 .toggler-icon {
     width: 30px;
     height: 3px;
     background-color: #757779;
     display: block;
-    transition: all 0.2s;
+    transition: all 0.3s ease-in-out;
 }
 
-/* Adds Space between the lines */
+/* Space between lines */
 .middle-bar {
     margin: 5px auto;
 }
 
-/* State when navbar is opened (START) */
-.navbar-toggler .top-bar {
+/* === OPENED STATE (when menu is open) === */
+.navbar-toggler:not(.collapsed) .top-bar {
     transform: rotate(45deg);
     transform-origin: 10% 10%;
 }
 
-.navbar-toggler .middle-bar {
+.navbar-toggler:not(.collapsed) .middle-bar {
     opacity: 0;
     filter: alpha(opacity=0);
 }
 
-.navbar-toggler .bottom-bar {
+.navbar-toggler:not(.collapsed) .bottom-bar {
     transform: rotate(-45deg);
     transform-origin: 10% 90%;
 }
 
-/* State when navbar is opened (END) */
-
-/* State when navbar is collapsed (START) */
+/* === COLLAPSED STATE (default/closed) === */
 .navbar-toggler.collapsed .top-bar {
     transform: rotate(0);
 }
@@ -112,9 +111,7 @@ body {
     transform: rotate(0);
 }
 
-/* State when navbar is collapsed (END) */
-
-/* Color of Toggler when collapsed */
+/* Optional: Change color of lines when collapsed */
 .navbar-toggler.collapsed .toggler-icon {
     background-color: #777777;
 }
