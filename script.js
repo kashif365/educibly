@@ -44,7 +44,7 @@ document.querySelectorAll('.service-btn').forEach(btn => {
     });
 });
 $(document).ready(function () {
-    $(".owl-carousel").not('.owl-carousel-2, .testimonial-carousel, .service-carousel, .about-card, .writer-carousel').owlCarousel({
+    $(".owl-carousel").not('.owl-carousel-2, .testimonial-carousel, .service-carousel, .about-card, .writer-carousel, .experts-carousel').owlCarousel({
         loop: true,
         margin: 20,
         nav: true,
@@ -169,8 +169,8 @@ $(document).ready(function () {
     $(".writer-carousel").owlCarousel({
         loop: true,
         margin: 20,
-        nav: true,
-        dots: false,
+        nav: false,
+        dots: true,
         navText: [
             '<img src="./arrow-sm-left-svgrepo-com.svg" alt="Prev">',
             '<img src="./arrow-sm-right-svgrepo-com.svg" alt="Next">'
@@ -296,7 +296,7 @@ function handleCarousel() {
                 loop: true,
                 margin: 10,
                 nav: false,
-                dots: false,
+                dots: true,
                 autoplay: true,
                 autoplayTimeout: 3000,
                 autoplayHoverPause: true,

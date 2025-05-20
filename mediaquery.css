@@ -1,8 +1,24 @@
 @media (max-width: 575.98px) {}
 
 @media (max-width: 767.98px) {
+
+    .hero-section-padding-top{
+        padding-top: 12%;
+    }
     .service-heading {
         padding-top: 5% !important;
+    }
+    .grid-btn{
+        display: flex ;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        margin: auto;
+        gap: 1.2rem;
+        width: 50%;
+    }
+    .w-md-100{
+        max-width: 80%;
     }
 
     .category-col {
@@ -193,7 +209,11 @@
 
 }
 
-@media (min-width: 768px) and (max-width: 1399.98px) {}
+@media (min-width: 992px) {
+.w-lg-50{
+        /* max-width: 1% !important; */
+    }
+}
 
 @media (min-width: 768px) and (max-width: 992px) {
     .order-card {
