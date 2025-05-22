@@ -213,6 +213,9 @@
 .w-lg-50{
         /* max-width: 1% !important; */
     }
+    .grid-btn{
+        margin-top: 5% !important;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {

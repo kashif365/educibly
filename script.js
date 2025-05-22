@@ -4,6 +4,14 @@ $(document).ready(function () {
     $("#footer").load("footer.html");
 });
 
+// const currentPage = window.location.pathname.split("/").pop();
+// document.querySelectorAll(".nav-link").forEach(link => {
+//     const linkHref = link.getAttribute("href").replace("./", "");
+//     if (linkHref === currentPage) {
+//         link.classList.add("active");
+//     }
+// });
+
 document.querySelectorAll('.ass-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
         e.preventDefault();
@@ -153,7 +161,7 @@ $(document).ready(function () {
         margin: 20,
         nav: false,
         dots: false,
-        autoplay:true,
+        autoplay: true,
         autoplayTimeout: 3000,
         responsive: {
             0: {
@@ -267,21 +275,35 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const toggleButton = document.getElementById('toggleButton');
-    const additionalContent = document.getElementById('additionalContent');
 
-    toggleButton.addEventListener('click', function () {
-        // Toggle visibility of the additional content
-        if (additionalContent.style.display === 'none') {
-            additionalContent.style.display = 'block';
-            toggleButton.innerHTML = 'Show less <i class="fas fa-chevron-up"></i>';
-        } else {
-            additionalContent.style.display = 'none';
-            toggleButton.innerHTML = 'Show more <i class="fas fa-chevron-down"></i>';
-        }
+// $(document).ready(function () {
+//     const $toggleButton = $('#toggleButton');
+//     const $additionalContent = $('#additionalContent');
+
+//     $toggleButton.on('click', function () {
+//         if ($additionalContent.is(':visible')) {
+//             $additionalContent.hide();
+//             $toggleButton.html('Show more <i class="fas fa-chevron-down"></i>');
+//         } else {
+//             $additionalContent.show();
+//             $toggleButton.html('Show less <i class="fas fa-chevron-up"></i>');
+//         }
+//     });
+// });
+   $(document).ready(function () {
+        $('#toggleButton').on('click', function () {
+            $('#additionalContent').slideToggle();
+
+            if ($('#additionalContent').is(':visible')) {
+                $(this).html('Show less <i class="fas fa-chevron-up"></i>');
+            } else {
+                $(this).html('Show more <i class="fas fa-chevron-down"></i>');
+            }
+        });
     });
-});
+
+
+
 
 
 function handleCarousel() {

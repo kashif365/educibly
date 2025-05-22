@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Writers at Your Service 📝 Best Papers Right Here</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./order.css">
+
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <div id="top"></div>
+
+    <!-- Progress Steps -->
+    <div class="progress-steps">
+        <div class="container">
+            <div class="step active">
+                <span class="step-number">1</span> Order overview
+            </div>
+            <div class="step">
+                <span class="step-number">2</span> Instructions
+            </div>
+            <div class="step">
+                <span class="step-number">3</span> Checkout
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container main-content">
+        <div class="row">
+            <!-- Left Column: Order Form -->
+            <div class="col-lg-8 mb-4">
+                <div class="order-form">
+                    <h5 class="section-heading">Select your type of work and deadline</h5>
+
+                    <!-- Type of Work -->
+                    <div class="mb-4">
+                        <label class="form-label">Type of work</label>
+                        <div class="mb-2">
+                            <select class="form-select" id="workTypeSelect">
+                                <option value="Essay">Essay</option>
+                                <option value="Assignment">Assignment</option>
+                                <option value="Research Paper">Research Paper</option>
+                                <option value="Case Study">Case Study</option>
+                            </select>
+                        </div>
+                        <div class="d-flex flex-wrap" id="workTypeButtons">
+                            <button class="work-type-btn active" data-type="Essay">Essay</button>
+                            <button class="work-type-btn" data-type="Assignment">Assignment</button>
+                            <button class="work-type-btn" data-type="Research Paper">Research Paper</button>
+                            <button class="work-type-btn" data-type="Case Study">Case Study</button>
+                        </div>
+                    </div>
+
+                    <!-- Subject -->
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <label class="form-label">Subject <span class="required">(Required)</span></label>
+                            <select class="form-select" id="subjectSelect">
+                                <option value="">Please select your subject</option>
+                                <option value="Health Sciences">Health Sciences</option>
+                                <option value="Psychology">Psychology</option>
+                                <option value="Business">Business</option>
+                                <option value="Education">Education</option>
+                                <option value="Literature">Literature</option>
+                                <option value="History">History</option>
+                            </select>
+                            <div class="error-text" id="subjectError">Subject cannot be blank.</div>
+                            <div class="subject-tags mt-2">
+                                <button class="subject-tag" data-subject="Health Sciences">Health Sciences</button>
+                                <button class="subject-tag" data-subject="Psychology">Psychology</button>
+                                <button class="subject-tag" data-subject="Business">Business</button>
+                                <button class="subject-tag" data-subject="Education">Education</button>
+                            </div>
+                        </div>
+
+                        <!-- Academic Level -->
+                        <div class="col-md-6">
+                            <label class="form-label">Academic level</label>
+                            <select class="form-select" id="academicLevelSelect">
+                                <option value="High School">High School</option>
+                                <option value="College" selected>College</option>
+                                <option value="Undergraduate">Undergraduate</option>
+                                <option value="Master's">Master's</option>
+                                <option value="PhD">PhD</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Page Count -->
+                    <div class="mb-4">
+                        <label class="form-label">Page count</label>
+                        <select class="form-select" id="pageCountSelect">
+                            <option value="1 page / 275 words" selected>275 words / 1 page</option>
+                            <option value="2 pages / 550 words">550 words / 2 pages</option>
+                            <option value="3 pages / 825 words">825 words / 3 pages</option>
+                            <option value="4 pages / 1100 words">1100 words / 4 pages</option>
+                            <option value="5 pages / 1375 words">1375 words / 5 pages</option>
+                        </select>
+                    </div>
+
+                    <!-- Spacing Option -->
+                    <div class="mb-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="singleSpacing">
+                            <label class="form-check-label" for="singleSpacing">
+                                I need single spacing
+                                <i class="bi bi-question-circle ms-1 text-muted"></i>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Deadline -->
+                    <div class="mb-4">
+                        <label class="form-label">Deadline in</label>
+                        <select class="form-select" id="deadlineSelect">
+                            <option value="20 days / Tue, Jun 10" selected>20 days / Tue, Jun 10</option>
+                            <option value="15 days / Thu, Jun 5">15 days / Thu, Jun 5</option>
+                            <option value="10 days / Sat, May 31">10 days / Sat, May 31</option>
+                            <option value="7 days / Wed, May 28">7 days / Wed, May 28</option>
+                            <option value="3 days / Sat, May 24">3 days / Sat, May 24</option>
+                            <option value="24 hours / Wed, May 22">24 hours / Wed, May 22</option>
+                        </select>
+                        <div class="guarantee-text mt-2">
+                            <i class="bi bi-check-circle-fill"></i> Guaranteed on-time delivery, most orders arrive
+                            earlier.
+                        </div>
+                    </div>
+
+                    <!-- Next Step Button -->
+                    <div class="d-flex justify-content-end mt-4">
+                        <button class="btn btn-success next-step-btn" id="nextStepBtn">
+                            Next step <i class="bi bi-arrow-right ms-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Summary -->
+            <div class="col-lg-4">
+                <div class="summary-card">
+                    <h5>Summary</h5>
+
+                    <div class="summary-item">
+                        <span>Type of work:</span>
+                        <span id="summaryWorkType">Essay</span>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Subject:</span>
+                        <span id="summarySubject">Not selected</span>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Academic level:</span>
+                        <span id="summaryAcademicLevel">College</span>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Page count:</span>
+                        <span id="summaryPageCount">1 page / 275 words</span>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Deadline in:</span>
+                        <span id="summaryDeadline">20 days / Tue, Jun 10</span>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Title page</span>
+                        <span class="free-tag">Free</span>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Bibliography</span>
+                        <span class="free-tag">Free</span>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Outline</span>
+                        <span class="free-tag">Free</span>
+                    </div>
+
+                    <div class="summary-item mt-3">
+                        <button class="promo-code-btn" id="promoCodeBtn">
+                            Promo code <i class="bi bi-chevron-down ms-1"></i>
+                        </button>
+                    </div>
+
+                    <div class="promo-code-container mt-2 d-none" id="promoCodeContainer">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Enter promo code">
+                            <button class="btn btn-outline-secondary" type="button">Apply</button>
+                        </div>
+                    </div>
+
+                    <div class="summary-item total-row">
+                        <span>TOTAL:</span>
+                        <div>
+                            <span class="dropdown-toggle me-1">USD</span>
+                            <span class="fs-5" id="totalPrice">$7.38</span>
+                        </div>
+                    </div>
+
+                    <!-- Info Sections -->
+                    <div class="info-section">
+                        <div class="info-item">
+                            <i class="bi bi-shield-check icon"></i>
+                            <div>
+                                <div class="info-header" data-bs-toggle="collapse" data-bs-target="#plagiarismInfo">
+                                    No plagiarism and AI <i class="bi bi-chevron-down ms-1"></i>
+                                </div>
+                                <div class="collapse show" id="plagiarismInfo">
+                                    <small class="text-muted">You will receive 100% original work tailored to your
+                                        instructions by a qualified subject matter writer. No AI is used.</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="bi bi-arrow-return-left icon"></i>
+                            <div>
+                                <div class="info-header" data-bs-toggle="collapse" data-bs-target="#moneyBackInfo">
+                                    Money-back <i class="bi bi-chevron-down ms-1"></i>
+                                </div>
+                                <div class="collapse" id="moneyBackInfo">
+                                    <small class="text-muted">We offer a money-back guarantee if you're not satisfied with our service.</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="bi bi-lock icon"></i>
+                            <div>
+                                <div class="info-header" data-bs-toggle="collapse" data-bs-target="#confidentialityInfo">
+                                    Confidentiality <i class="bi bi-chevron-down ms-1"></i>
+                                </div>
+                                <div class="collapse" id="confidentialityInfo">
+                                    <small class="text-muted">Your personal information and order details are kept strictly confidential.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Help Section -->
+        <div class="help-section">
+            <div class="help-avatar">
+                <img src="/order-img.png" alt="Support agent" class="rounded-circle">
+            </div>
+            <div class="flex-grow-1">
+                <h5>Need help filling out the order details or have any questions?</h5>
+                <p class="mb-0">We are online 24/7 to assist you. Our average response time is 10 seconds!</p>
+            </div>
+            <button class="btn btn-dark chat-btn">Start live chat</button>
+        </div>
+    </div>
+
+    <button id="myBtn" class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-arrow-up-circle-fill"></i>
+    </button>
+
+    <div id="footer"></div>
+    <script src="./order.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

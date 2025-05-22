@@ -11,7 +11,33 @@ body {
     /* font-family: 'open sans', sans-serif; */
     /* overflow: hidden; */
     /* background-color: #f2f2f2; */
+    /* overflow-x: hidden !important; */
 }
+
+.nav-item a {
+    position: relative;
+    padding-bottom: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-item a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #ffa812;
+    transition: width 0.3s ease;
+}
+
+.nav-item a:hover::after,
+.nav-item a.active::after {
+    width: 100%;
+}
+
+
 
 @media(max-width:36rem) {
     html {
@@ -23,12 +49,12 @@ body {
 @media(max-width:48rem) {
     html {
         /* font-size: 45%; */
-        
+
     }
 
     .hero-section {
         padding-top: 12% !important;
-        
+
     }
 
 
@@ -163,7 +189,7 @@ body {
 }
 
 .fs-60 {
-    font-size: 4rem;
+    font-size: 3.4rem;
     font-weight: 800 !important;
 
 }
@@ -401,6 +427,7 @@ body {
 
 .green-square-bullet {
     padding-top: 1rem;
+    padding-left: 1rem;
 }
 
 .green-square-bullet li {
@@ -870,11 +897,12 @@ body {
     .service-carousel .owl-next {
         right: -.2rem !important;
     }
+
     .owl-prev {
         left: 1.5rem !important;
     }
 
-     .owl-next {
+    .owl-next {
         /* right: -rem !important; */
     }
 }
@@ -1034,7 +1062,18 @@ footer {
     .expert-card {
         margin-bottom: 1.5rem;
     }
+
+    
+
 }
+/* .expert-card{
+    transition: transform 0.3s ease !important;
+}
+.transtion-img{
+    transform: scale(1.05) !important;
+    border-radius: 50% !important;
+    border: green !important;
+} */
 
 #myBtn {
     position: fixed;
@@ -1244,7 +1283,8 @@ footer {
         /* max-width: 60%; */
         /* margin: auto; */
     }
-    .mt-n4{
+
+    .mt-n4 {
         margin-top: -5% !important;
     }
 
@@ -1484,3 +1524,18 @@ footer {
         border-bottom-style: dashed;
     }
 }
+
+
+/* .hover-ani img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.hover-ani:hover img {
+  transform: scale(1.1) !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2) !important;
+} */
+
+ #toggleButton {
+        cursor: pointer;
+    }
+ 
