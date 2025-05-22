@@ -208,6 +208,13 @@ body {
     font-size: .8rem;
     font-weight: 700;
 }
+.hover-animation {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .hover-animation:hover {
+        transform: scale(1.05);
+    }
 
 #navbar {
     /* background-color: #333; */
@@ -1063,9 +1070,10 @@ footer {
         margin-bottom: 1.5rem;
     }
 
-    
+
 
 }
+
 /* .expert-card{
     transition: transform 0.3s ease !important;
 }
@@ -1284,6 +1292,14 @@ footer {
         /* margin: auto; */
     }
 
+    .hover-animation {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .hover-animation:hover {
+        transform: scale(1.05);
+    }
+
     .mt-n4 {
         margin-top: -5% !important;
     }
@@ -1490,6 +1506,7 @@ footer {
         /* max-width: 60%; */
         /* margin: auto; */
     }
+    
 
     .hero-section h1 {
         max-width: 75%;
@@ -1523,8 +1540,38 @@ footer {
         /* border-bottom: #666; */
         border-bottom-style: dashed;
     }
+
 }
 
+@media (max-width: 991.98px) {
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content-wrapper img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    .md-mx-widht{
+    max-width: 60% ;
+    margin: auto;
+}
+}
+@media (min-width: 540px) and (max-width: 992px){
+    .md-mx-widht-B{
+    max-width: 60% ;
+    /* text-align: start; */
+    margin: auto;
+    /* text-align: center; */
+    
+}
+}
 
 /* .hover-ani img {
   transition: transform 0.3s ease, box-shadow 0.3s ease !important;
@@ -1535,7 +1582,6 @@ footer {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2) !important;
 } */
 
- #toggleButton {
-        cursor: pointer;
-    }
- 
+#toggleButton {
+    cursor: pointer;
+}
