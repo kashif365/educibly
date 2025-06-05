@@ -306,56 +306,109 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-function handleCarousel() {
-    if (window.innerWidth < 992) {
-        // Only initialize if not already initialized
-        if (!$('.experts-carousel').hasClass('owl-loaded')) {
-            $('.experts-carousel').removeClass('d-none').addClass('d-block');
-            $('.experts-container .d-lg-block').addClass('d-none');
+// function handleCarousel() {
+//     if (window.innerWidth < 992) {
+//         // Only initialize if not already initialized
+//         if (!$('.experts-carousel').hasClass('owl-loaded')) {
+//             $('.experts-carousel').removeClass('d-none').addClass('d-block');
+//             $('.experts-container .d-lg-block').addClass('d-none');
 
-            // Initialize Owl Carousel
-            $('.experts-carousel').owlCarousel({
-                loop: true,
-                margin: 10,
-                nav: false,
-                dots: true,
-                autoplay: true,
-                autoplayTimeout: 3000,
-                autoplayHoverPause: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    576: {
-                        items: 2
-                    },
-                    768: {
-                        items: 3
-                    }
+//             // Initialize Owl Carousel
+//             $('.experts-carousel').owlCarousel({
+//                 loop: true,
+//                 margin: 10,
+//                 nav: false,
+//                 dots: true,
+//                 autoplay: true,
+//                 autoplayTimeout: 3000,
+//                 autoplayHoverPause: true,
+//                 responsive: {
+//                     0: {
+//                         items: 1
+//                     },
+//                     576: {
+//                         items: 2
+//                     },
+//                     768: {
+//                         items: 3
+//                     }
+//                 }
+                
+//             });
+//         }
+//     } else {
+//         // Destroy carousel if it's initialized
+//         if ($('.experts-carousel').hasClass('owl-loaded')) {
+//             $('.experts-carousel').owlCarousel('destroy');
+//         }
+
+//         // Show regular layout, hide carousel
+//         $('.experts-carousel').addClass('d-none').removeClass('d-block');
+//         $('.experts-container .d-lg-block').removeClass('d-none');
+//     }
+// }
+
+// // Run on page load
+// $(document).ready(function () {
+//     handleCarousel();
+
+//     // Run on window resize
+//     $(window).resize(function () {
+//         handleCarousel();
+//     });
+// });
+
+
+
+ $(document).ready(function () {
+    // Run this only if screen width is less than 992px
+    if ($(window).width() < 992) {
+        $('.experts-carousel').owlCarousel({
+            center: true,
+            items: 3,
+            loop: true,
+            margin: 20,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            stagePadding: 0,
+            responsive: {
+                0: {
+                    items: 1,
+                    stagePadding: 0
+                },
+                600: {
+                    items: 3,
+                    stagePadding: 0
+                },
+                1000: {
+                    items: 3,
+                    stagePadding: 0
                 }
-            });
-        }
-    } else {
-        // Destroy carousel if it's initialized
-        if ($('.experts-carousel').hasClass('owl-loaded')) {
-            $('.experts-carousel').owlCarousel('destroy');
+            },
+            onInitialized: function (event) {
+                updateCenterItem();
+            },
+            onTranslated: function (event) {
+                updateCenterItem();
+            }
+        });
+
+        function updateCenterItem() {
+            $('.expert-card').removeClass('center');
+            $('.owl-item.active.center .expert-card').addClass('center');
         }
 
-        // Show regular layout, hide carousel
-        $('.experts-carousel').addClass('d-none').removeClass('d-block');
-        $('.experts-container .d-lg-block').removeClass('d-none');
+        $('.experts-carousel').on('changed.owl.carousel', function (event) {
+            setTimeout(function () {
+                $('.expert-card').removeClass('center');
+                $('.owl-item.active.center .expert-card').addClass('center');
+            }, 50);
+        });
     }
-}
-
-// Run on page load
-$(document).ready(function () {
-    handleCarousel();
-
-    // Run on window resize
-    $(window).resize(function () {
-        handleCarousel();
-    });
 });
+
+        
 
 const backToTopButton = document.getElementById("myBtn");
 
