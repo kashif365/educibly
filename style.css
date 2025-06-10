@@ -19,9 +19,11 @@ body {
     padding-bottom: 5px;
     color: black;
     text-decoration: none;
-}
+} 
 
-.nav-item a::after {
+
+
+ .nav-item a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -40,8 +42,21 @@ body {
 
 
 @media(max-width:36rem) {
-    html {
-        /* font-size: 35%; */
+    /* .guarantee-page {
+        font-size: 35% !important;
+    } */
+
+    .hero-team p {
+        font-size: 65% !important;
+    }
+
+    .writer-specialties,
+    .writer-bio {
+        font-size: 45% !important;
+    }
+
+    .hero-team h1 {
+        font-size: 200% !important;
     }
 
 }
@@ -51,6 +66,15 @@ body {
         /* font-size: 45%; */
 
     }
+
+    .feature-card p {
+        font-size: 1rem;
+        /* max-width: 50%; */
+
+    }
+
+
+
 
 
 
@@ -399,6 +423,10 @@ body {
     }
 }
 
+.ex-cat-img {
+    /* width: 60%; */
+}
+
 .icon-circle {
     background-color: #f8f9fa;
     width: 50px;
@@ -515,6 +543,36 @@ body {
     height: 100%;
 }
 
+/* @media (max-width: 767.98px) {
+  .feature-card {
+    text-align: center;
+    padding: 15px;
+  }
+
+  .feature-card .feature-icon img {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 10px;
+  }
+
+  .feature-card h4 {
+    font-size: 1rem;
+    margin: 10px 0 5px;
+  }
+
+  .feature-card p {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .owl-carousel .feature-card {
+    margin: 0 5px;
+  }
+} */
+
+
 /* Custom Owl Carousel Navigation */
 /* .owl-nav {
     position: absolute;
@@ -585,7 +643,10 @@ body {
 
 .owl-nav button.owl-prev {
     left: -60px;
+    /* background-color: green !important; */
 }
+
+.owl-feature-btn {}
 
 .owl-nav button.owl-next {
     right: 40px;
@@ -922,20 +983,22 @@ body {
 
 @media (max-width:768px) {
     .service-carousel .owl-prev {
-        left: 1.5rem !important;
+        left: -3% !important;
     }
 
     .service-carousel .owl-next {
-        right: -.2rem !important;
+        right: 2% !important;
     }
 
     .owl-prev {
-        left: 1.5rem !important;
+        /* left: 1.5rem !important; */
     }
 
     .owl-next {
         /* right: -rem !important; */
     }
+
+    .owl-feature-btn {}
 }
 
 .owl-prev span,
@@ -1004,6 +1067,8 @@ body {
     */
 
 }
+
+
 
 footer {
     background-color: #1a1a1a;
@@ -1548,6 +1613,44 @@ footer {
         text-decoration: none;
         color: black;
     }
+
+    .page-link {
+        color: #000 !important;
+        border: 1px solid #ddd;
+        padding: 0.5rem 0.75rem;
+        margin: 0 4px;
+        /* border-radius: 4px; */
+        text-align: center;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease;
+    }
+
+    .page-link:hover {
+        background-color: #ffc107;
+        /* Yellow hover */
+    }
+
+    .page-item.active-custom .page-link {
+        /* border: .2px solid #ffc107; */
+        /* Yellow border for active */
+        /* font-weight: bold; */
+    }
+
+    .page-link:focus {
+    border: .2px solid #ffc107;
+    box-shadow: none;
+    outline: none;
+    background-color: none;
+    /* background-color: yellow; */
+}
+
+
+
+
 
     .line {
         width: 75%;

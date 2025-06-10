@@ -1,0 +1,259 @@
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: white;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: var(--bg-yellow);
+            padding: 80px 0;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        /* Filter Section */
+        .filter-section {
+            padding: 40px 0;
+            background: white;
+        }
+
+        .filter-btn {
+            padding: 10px 20px;
+            border: 1px solid var(--text-dark);
+            border-radius: 25px;
+            color: var(--text-dark);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 400;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin: 0 8px 16px 0;
+            background: white;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--text-dark);
+            color: white;
+        }
+
+        /* Blog Section */
+        .blog-section {
+            padding: 40px 0 60px 0;
+            background: white;
+        }
+
+        .blog-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .blog-content {
+            flex: 1;
+            padding-right: 40px;
+        }
+
+        .blog-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 16px;
+            line-height: 1.4;
+        }
+
+        .blog-title a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .blog-title a:hover {
+            color: var(--accent-color);
+        }
+
+        .blog-excerpt {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .blog-meta {
+            display: flex;
+            gap: 30px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .blog-image {
+            flex-shrink: 0;
+            width: 200px;
+            height: 120px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .blog-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Divider Lines */
+        .blog-item::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: var(--line-color);
+        }
+
+        .blog-item:last-child::after {
+            display: none;
+        }
+
+        /* Pagination Styles */
+        .pagination-section {
+            padding: 40px 0;
+            background: white;
+        }
+
+        .custom-pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .pagination-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .pagination-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border: 1px solid var(--line-color);
+            background: white;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+
+        .pagination-link:hover {
+            border-color: var(--text-dark);
+            color: var(--text-dark);
+        }
+
+        .pagination-item.active .pagination-link {
+            background: var(--accent-color);
+            border-color: var(--accent-color);
+            color: white;
+            font-weight: 500;
+        }
+
+        .pagination-link.disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        /* Page info */
+        .page-info {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+        }
+
+        .page-info span {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-section {
+                padding: 60px 0;
+            }
+
+            .blog-item {
+                flex-direction: column;
+                margin-bottom: 30px;
+            }
+
+            .blog-content {
+                padding-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .blog-image {
+                width: 100%;
+                height: 180px;
+            }
+
+            .blog-meta {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .filter-btn {
+                font-size: 0.85rem;
+                padding: 8px 16px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .filter-section {
+                padding: 30px 0;
+            }
+
+            .blog-section {
+                padding: 30px 0 40px 0;
+            }
+
+            .custom-pagination {
+                gap: 2px;
+            }
+
+            .pagination-link {
+                width: 36px;
+                height: 36px;
+                font-size: 0.85rem;
+            }
+        }
