@@ -8,10 +8,12 @@
 
 body {
     font-family: 'Raleway', sans-serif !important;
+    
     /* font-family: 'open sans', sans-serif; */
     /* overflow: hidden; */
-    /* background-color: #f2f2f2; */
-    /* overflow-x: hidden !important; */
+    /* background-color: green !important; */
+    overflow-x: hidden !important;
+    /* overflow: hidden !important; */
 }
 
 .nav-item a {

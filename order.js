@@ -188,10 +188,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Proceed to next step (for demo purposes, just show an alert)
-    alert("Proceeding to step 2: Instructions")
+    
 
     // In a real implementation, you would navigate to the next page or show the next step
-    // window.location.href = 'instructions.html';
+    window.location.href = 'instructions.html';
   })
 
   // Info section toggles
