@@ -21,7 +21,8 @@
     
 }
 @media (max-width: 575.98px) {
-    .progress-steps{
+    .progress-steps,
+    .hero-section-t{
      padding-top: 100px;
     }
 }
@@ -38,14 +39,15 @@
 
 @media (max-width: 767.98px) {
 
-    .hero-section-padding-top,
+    
     .progress-steps {
         padding-top: 12%;
     }
     .hero-team{
         /* font-size: 1rem; */
     }
-    .progress-steps{
+    .progress-steps,
+    .hero-section-padding-top{
      padding-top: 100px;
     }
 
