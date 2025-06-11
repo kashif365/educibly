@@ -16,6 +16,25 @@ body {
   font-family: "Raleway", sans-serif;
   color: var(--text-color);
 }
+@media (max-width:349px) {
+    .progress-steps {
+        display: flex;
+        flex-direction: column;
+        align-items: start !important;
+        justify-content: center !important;
+        gap: 10px;
+
+        /* flex-wrap: wrap; */
+    }
+}
+
+@media (max-width: 768px) {
+    .progress-steps {
+        /* flex-direction: column; */
+        /* gap: 10px; */
+        flex-wrap: wrap;
+    }
+}
 
 /* Custom focus styles - replacing blue with yellow */
 .form-control:focus,
@@ -37,6 +56,8 @@ body {
   padding-top: 8%;
   margin: auto;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .progress-steps .step {
@@ -396,4 +417,23 @@ body {
     display: block;
     margin-bottom: 10px;
   }
+}
+@media (max-width:349px) {
+    .progress-steps {
+        display: flex;
+        flex-direction: column;
+        align-items: start !important;
+        justify-content: center !important;
+        gap: 10px;
+
+        /* flex-wrap: wrap; */
+    }
+}
+
+@media (max-width: 768px) {
+    .progress-steps {
+        /* flex-direction: column; */
+        /* gap: 10px; */
+        flex-wrap: wrap;
+    }
 }

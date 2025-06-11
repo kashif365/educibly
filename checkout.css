@@ -18,6 +18,9 @@
             /* margin: 0 auto; */
             /* padding: 20px; */
         }
+        .bg-halfwhite{
+            background-color: rgb(245, 245, 245);
+        }
 
         /* Progress Steps */
         .progress-steps {
