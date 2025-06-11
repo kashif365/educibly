@@ -504,3 +504,4 @@ $(document).ready(function () {
         handleResponsiveDisplay();
     });
 });
+
