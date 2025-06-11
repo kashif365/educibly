@@ -20,21 +20,33 @@
     
     
 }
+@media (max-width: 575.98px) {
+    .progress-steps{
+     padding-top: 100px;
+    }
+}
 
 @media (min-width: 575.98px) and (max-width: 1200px) {
     .hero-section,
     .about-header {
         padding-top: 12% !important;
     }
+    .progress-steps{
+     padding-top: 100px;
+    }
 }
 
 @media (max-width: 767.98px) {
 
-    .hero-section-padding-top {
+    .hero-section-padding-top,
+    .progress-steps {
         padding-top: 12%;
     }
     .hero-team{
         /* font-size: 1rem; */
+    }
+    .progress-steps{
+     padding-top: 100px;
     }
 
     .service-heading {
@@ -250,6 +262,9 @@
 @media (min-width: 992px) {
     .w-lg-50 {
         /* max-width: 1% !important; */
+    }
+    .progress-steps{
+     padding-top: 120px;
     }
 
     .grid-btn {

@@ -117,11 +117,11 @@
 
             nextStepBtn.addEventListener("click", () => {
                 // Validate form
-                if (!instructionsText.value.trim()) {
-                    alert("Please provide instructions for your task.");
-                    instructionsText.focus();
-                    return;
-                }
+                // if (!instructionsText.value.trim()) {
+                //     alert("Please provide instructions for your task.");
+                //     instructionsText.focus();
+                //     return;
+                // }
 
                 // Save form data
                 saveFormData();

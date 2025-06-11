@@ -14,9 +14,9 @@
         }
 
         .main-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+            /* max-width: 1200px; */
+            /* margin: 0 auto; */
+            /* padding: 20px; */
         }
 
         /* Progress Steps */
@@ -25,10 +25,13 @@
             justify-content: center;
             align-items: center;
             margin-bottom: 40px;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            background-color: rgb(238, 238, 240);
+            /* padding: 20px; */
+            /* border-radius: 8px; */
+            /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+            padding-top: 8%;
+            /* width: 100%; */
+            /* margin: 0px !important; */
         }
 
         .step {
@@ -464,6 +467,17 @@
             font-weight: 600;
         }
 
+        @media (max-width:349px) {
+            .progress-steps {
+                display: flex;
+                flex-direction: column;
+                align-items: start !important;
+                justify-content: center !important;
+                gap: 10px;
+
+                /* flex-wrap: wrap; */
+            }
+        }
         /* Responsive Design */
         @media (max-width: 768px) {
             .main-content {
@@ -471,8 +485,9 @@
             }
 
             .progress-steps {
-                flex-direction: column;
-                gap: 10px;
+                /* flex-direction: column; */
+                /* gap: 10px; */
+                flex-wrap: wrap;
             }
 
             .step:not(:last-child)::after {
